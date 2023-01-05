@@ -216,12 +216,12 @@
     color: #92a8df;
 } */
 
-.name__dot {
+/* .name__dot {
     height: 10px;
     width: 10px;
     background-color: #92a8df;
     animation: pulse 2s ease-out alternate infinite running;
-}
+} */
 
 @keyframes pulse {
     0% {
