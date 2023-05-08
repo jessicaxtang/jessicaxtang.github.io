@@ -19,23 +19,13 @@ const highlightMenu = () => {
     let scrollPos = window.scrollY;
     console.log(scrollPos);
 
-    // adds 'highlight' class to menu items
-    if (window.innerWidth > 960 && scrollPos < 600) {
-        homeMenu.classList.add('highlight');
-        aboutMenu.classList.remove('highlight');
-        return
-    } else if (window.innerWidth > 960 && scrollPos < 1300) {
-        homeMenu.classList.remove('highlight');
-        aboutMenu.classList.add('highlight');
-        portfolioMenu.classList.remove('highlight');
-        return
-    } else if (window.innerWidth > 960 && scrollPos < 2345) {
-        aboutMenu.classList.remove('highlight');
+    // adds 'highlight' class to navbar menu items with scroll
+    if (window.innerWidth > 960 && scrollPos > 375) {
         portfolioMenu.classList.add('highlight');
         return
     } 
 
-    if ((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
+    if ((elem && window.innerWidth < 960 && scrollPos < 400) || elem) {
         elem.classList.remove('highlight');
     }
 }

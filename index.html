@@ -1,5 +1,4 @@
 <!--Shortcuts
-shift+alt+down arrow: duplicate a line
 a.navbar__links#home-page + tab creates an a tag, class, ID automatically
 -->
 <!DOCTYPE html>
@@ -27,14 +26,14 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__item">
+                <!-- <li class="navbar__item">
                     <a href="#home" class="navbar__links" id="home-page">home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="about-page">about</a>
-                </li>
+                </li> -->
                 <li class="navbar__item">
                     <a href="#portfolio" class="navbar__links" id="portfolio-page">portfolio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links" id="about-page">about</a>
                 </li>
                 <li class="navbar__btn">
                     <!-- <a href="https://drive.google.com/file/d/1Dljsl2FYi88p9-CeX2tJ_eEnEMkh8dNG/view?usp=sharing" class="button" target="_blank" id="contact">resume</a> -->
@@ -49,34 +48,63 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
         <div class="name__dot"></div>
         <div class="hero__container">
             <h1 class="hero__heading">hi, i'm jessica <!--<span>hello</span>--></h1>
-            <p class="hero__description">a first year engineering science student @ the University of Toronto. 
-                also a researcher, reader, and songwriter.</p>
+            <p class="hero__description">engineering science student @ the University of Toronto
+                <br> also an entrepreneur, researcher, and songwriter</p>
 
-            <button class="main__btn"><a href="mailto:jessicao.tang@mail.utoronto.ca">reach out</a></button>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <div class="main" id="about">
-        <div class="main__container">
-            <div class="main__img--container">
-                <!-- <div class="main__img--card"><img src="images/jt_headshot.jpg" alt="Jessica's headshot!"></div> -->
-                <div class="main__img--blob"></div>
-            </div>
-            <div class="main__content">
-                <h1>about me</h1>
-                <p>I am always excited to explore, try, and learn... whether for independent projects, new clubs, or new drinks at my favourite coffee shop. Since grade 11, I've been 
-                    especially intrigued by the field of artificial intelligence, especially, reinforcement learning and computer vision. Explore my hub to find out more about my past 
-                    projects, teaching experience, and my hobbies!
-                </p>
-            </div>
+            <!-- <button class="main__btn"><a href="mailto:jessicao.tang@mail.utoronto.ca">reach out</a></button> -->
+            <button class="main__btn"><a href="#portfolio">my work</a></button>
+            <div id="arrow-scroll"></div>
         </div>
     </div>
 
     <!-- Portfolio Section -->
     <div class="portfolio" id="portfolio">
-        <h1>portfolio</h1>
-        <p>Coming soon! In the meantime, checkout my resume or LinkedIn page for projects!</p>
+        <!-- <h1>Portfolio</h1> -->
+        <div class="project__container">
+
+            <!-- Articulator -->
+            <div class="project__content">
+                <h2>Articulator</h2>
+                <p>Bridging Speech and Sign Language</p>
+                <button class="project__btn"><a href="pages/articulator.html">learn more</a></button>
+            </div>
+            <div class="project__img--container">
+                <div class="project__img"><img src="images/rotasat.png"></div>
+            </div>
+            
+            <!-- DRL -->
+            <div class="project__img--container">
+                <div class="project__img"><img src="images/rotasat.png"></div>
+            </div>
+            <div class="project__content">
+                <h2>Indoor Farming Controller</h2>
+                <p>Deep Reinforcement Learning</p>
+                <button class="project__btn"><a href="pages/drl_controller.html">learn more</a></button>
+            </div>
+
+            <!-- IlluminAIte -->
+            <div class="project__content">
+                <h2>IlluminAIte</h2>
+                <p>Youth-led organization</p>
+                <button class="project__btn"><a href="pages/illuminaite.html">learn more</a></button>
+            </div>
+            <div class="project__img--container">
+                <div class="project__img"><img src="images/rotasat.png"></div>
+            </div>
+            
+            <!-- Rotasat-->
+            <div class="project__img--container">
+                <div class="project__img"><img src="images/rotasat.png"></div>
+            </div>
+            <div class="project__content">
+                <h2>Rotasat</h2>
+                <p>Can-sized satellite with radio data transmitter and active attitude control system to collect air temperature and pressure data</p>
+                <button class="project__btn"><a href="pages/rotasat.html">learn more</a></button>
+            </div>
+
+
+        </div>
+    
     </div>
 
     <!--Footer Section-->
@@ -87,9 +115,9 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
                     <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="social__icon--link" target="_blank">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.goodreads.com/user/show/151841764-jess" class="social__icon--link" target="_blank">
+                    <!-- <a href="https://www.goodreads.com/user/show/151841764-jess" class="social__icon--link" target="_blank">
                         <i class="fa-brands fa-goodreads"></i>
-                    </a>
+                    </a> -->
                     <a href="mailto:jessicao.tang@mail.utoronto.ca" class="social__icon--link" target="_blank">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
