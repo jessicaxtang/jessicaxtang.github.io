@@ -165,7 +165,7 @@ var cursor = {
         
         if (self.cursorVisible) {
             self.$dot.style.opacity = 1;
-            self.$outline.style.opacity = 1;
+            self.$outline.style.opacity = 0.5;
         } else {
             self.$dot.style.opacity = 0;
             self.$outline.style.opacity = 0;

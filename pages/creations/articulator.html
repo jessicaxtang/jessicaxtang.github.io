@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Tang</title>
+    <link rel="stylesheet" href="proj_styles.css">
+    <script src="https://kit.fontawesome.com/accfa05b72.js" crossorigin="anonymous"></script>
+</head>
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="../index.html" id="navbar__logo">jt</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="../index.html#portfolio" class="navbar__links" id="portfolio-page">portfolio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links" id="about-page">about</a>
+                </li>
+                <li class="navbar__btn">
+                    <!-- <a href="https://drive.google.com/file/d/1Dljsl2FYi88p9-CeX2tJ_eEnEMkh8dNG/view?usp=sharing" class="button" target="_blank" id="contact">resume</a> -->
+                    <a href="files/JessicaTangResume.pdf" class="button" target="_blank" id="contact">resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header" id="header">
+        <div class="header__container">
+            <h1 class="header__heading">Articulator</h1>
+            <p class="header__description">In our audible society, those with hearing and speech impairments constantly 
+                live in frustration and agony. They face a massive language barrier - if they want to shop or dine out, 
+                they can only communicate with those knowing the sign language. Many times, staff are eager to assist the 
+                customer with hearing loss, but don't know the sign language. Articulator is the tool to surpass this barrier.<br><br>
+                Made with Cohere AI, our clients - staff workers use Articulator to turn their words into American Sign Language 
+                to assist their customers. Simply speak into the microphone, and a video composed of the correct sign language 
+                will play and allow the customer to understand your thoughts. Because sign languages heavily uses body expressions, 
+                Articulator displays a sentiment emoji to convey the sentiment of the sentence, helping the customer better understand 
+                your words. <br><br> Articulator uses 6 different AI models. First, a speech recognition model converts your words to text. 
+                Then, a Cohere summarizer is used to simplify long speeches into digestible words. The text is then passed to a Cohere 
+                toxicity classifier, sentence by sentence, to detect noninclusive and toxic sentences, and all harmful sentences are passed 
+                through a Cohere generator to rephrase and clarify it. Finally, Cohere sentiment analysis is performed to gauge the sentiment 
+                of the text, and words or word groups are matched with a library of sign language videos. For words not found in the library 
+                of videos, we use Cohere Embed to find the closest word to replace it semantically.</p>
+        </div>
+    </div>
+
+
+    <script src="../app.js"></script>
+</body>
+</html>

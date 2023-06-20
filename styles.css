@@ -4,7 +4,7 @@
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
     scroll-behavior: smooth;
-    cursor: none;
+    cursor: none; /* none */
 }
 
 .navbar {
@@ -234,9 +234,9 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    height: 90%;
+    height: 85%;
     text-align: center;
-    padding: 30px;
+    padding: 0px 30px 30px;
 }
 
 .hero__heading {
@@ -251,6 +251,26 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     animation: shine 7s linear infinite;
+
+    display: inline-block;
+}
+
+.hero__heading a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #92a8df;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+.hero__heading a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 @keyframes shine {
@@ -268,6 +288,17 @@
     /* background-color: #9fb7f2; */
 }
 
+.hero__description a {
+    text-decoration: none;
+    color: #fafbff;
+}
+
+.hero__description a:hover {
+    color: #9fb7f2;
+    /* animation: highlight; */
+    transition: 0.3s ease-in-out;
+}
+
 .arrow-scroll {
     font-size: 13px;
     font-family: 'Work Sans', sans-serif;
@@ -275,17 +306,35 @@
 
 }
 
+.glow {
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #92a8df, 0 0 30px #92a8df, 0 0 40px #92a8df, 0 0 50px #92a8df, 0 0 60px #92a8df;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #9fb7f2, 0 0 30px #9fb7f2, 0 0 40px #9fb7f2, 0 0 50px #9fb7f2, 0 0 60px #9fb7f2, 0 0 70px #9fb7f2;
+    }
+}
+
 .highlight {
     border-bottom: 4px solid #9fb7f2;
 }
 
 @media screen and (max-width: 678px) {
-    .fa-square {
+    /* .fa-square {
         offset-path: path("M-150,-250 C0,-100 100,0 170,78");
         animation: move 3000ms 1 ease-in-out forwards;
         font-size: 2rem;
         color: #92a8df;
-    }
+    } */
 
     .hero__heading {
         font-size: 80px;
@@ -522,7 +571,7 @@
 
 .project__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -556,7 +605,7 @@
 
 .project__content p {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
     margin-bottom: 12px;
 }
@@ -578,33 +627,50 @@
     transition: 0.3s ease-in;
 }
 
-
-
-/* .project__btn {
-    font-size: 15px;
-    background: #92a8df;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 1rem;
+.project__btn1 {
     position: relative;
-    transition: all 0.35s;
+    width: 500px;
+    height: 60px;
+    overflow: hidden;
+    border: none;
+    /* border-radius: 30px; */
+    background-color: #635dc7;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
     outline: none;
 }
-  
-.project__btn a {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
-}
 
-.project__btn:hover {
-    color: #fff;
-    background: #21174d;
-    transform: translateY(-5px);
-    transition: all 0.35s;
-} */
+.project__btn1::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: 'Articulator';
+    transition: all .3s;
+  }
+  .project__btn1::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: 'Bridging Speech and Sign Language';
+    transition: all .3s;
+  }
+  .project__btn1:hover::before {
+    top: -60px;
+  }
+  .project__btn1:hover::after {
+    top: 0;
+  }
 
 .project__btn {
     /* color: #FFF; */
@@ -612,7 +678,7 @@
     background-color: transparent;
     border: 2px solid #92a8df;
     border-radius: 0px;
-    padding: 9px 18px;
+    /* padding: 90px 600px; */
     display: flex;
     letter-spacing: 1px;
     box-shadow: inset 0 0 0 0 #92a8df;
@@ -622,28 +688,35 @@
     transition: ease-out 0.5s;
 }
   
+.project__btn h2 {
+    color:#fafbff;
+    font-size: 2.5rem;
+    margin: 12px;
+}
+
+.project__btn p {
+    color:#fafbff;
+    font-size: 1.5rem;
+}
+
 .project__btn a {
     position: relative;
+    padding: 90px 450px;
     z-index: 2;
     color: #fff;
     text-decoration: none;
 }
 
 .project__btn:hover {
-    box-shadow: inset 400px 0 0 0 #92a8df;
+    transform: translateY(-10px);
+    transition: 0.3s ease-in;
 }
 
-.portfolio__wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-columns: auto auto auto; */
-    grid-template-rows: 1fr;
-}
-
-@media screen and (max-width: 1300px) {
-    .portfolio__wrapper {
+@media screen and (max-width: 678px) {
+    .project__container {
         grid-template-columns: 1fr;
     }
+
 }
 
 /* Footer Section */
