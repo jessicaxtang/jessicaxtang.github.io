@@ -349,7 +349,7 @@
    /* About Section */
 .main {
     background: #212121;
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 
 .main__container {
@@ -370,13 +370,6 @@
     width: 100%;
 }
 
-/* .main__content h1 {
-    font-size: 5rem;
-    text-transform: lowercase;
-    margin-bottom: 32px;
-    color: #92a8df;
-} */
-
 .main__content h1 {
     font-size: 4rem;
     margin-bottom: 32px;
@@ -391,14 +384,16 @@
     animation: shine 7s linear infinite;
 }
 
-/* @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
-} */
+.main__content h2 {
+    font-size: 2rem;
+    text-transform: lowercase;
+    margin-bottom: 32px;
+    color: #92a8df;
+}
 
 .main__content p {
     margin-top: 1rem;
+    margin-right: 3rem;
     font-size: 1rem;
     font-weight: 300;
     color: #fafbff;
