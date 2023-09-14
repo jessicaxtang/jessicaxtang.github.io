@@ -90,7 +90,7 @@ var cursor = {
         document.querySelectorAll('a').forEach(function(el) {
             el.addEventListener('mouseover', function() {
                 self.cursorEnlarged = true;
-                self.toggleCursorSize();
+                self.toggleCursorSize(); 
             });
             el.addEventListener('mouseout', function() {
                 self.cursorEnlarged = false;
