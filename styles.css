@@ -94,7 +94,9 @@
 }
 
 .button:hover {
-    box-shadow: inset 400px 0 0 0 #92a8df;
+    color: #92a8df;
+    transition: all 0.3s ease;
+    /* box-shadow: inset 400px 0 0 0 #92a8df; */
 }
 
 .navbar__links:hover {
@@ -239,7 +241,9 @@
 }
 
 .hero__heading {
+    font-family: 'Maven Pro', sans-serif;
     font-size: 100px;
+    letter-spacing: 20px;
     margin-bottom: 15px;
     color: #92a8df;
     background: -webkit-linear-gradient(to right, #fce2e2, #92a8df 40%, #9fb7f2 60%, #fce2e2);
