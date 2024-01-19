@@ -11,7 +11,8 @@
 /* NAVBAR STYLES */
 .navbar {
     background: #212121;
-    height: 80px;
+    height: 50px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,9 +242,9 @@
 }
 
 .hero__heading {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 100px;
-    letter-spacing: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 120px;
+    /* letter-spacing: 20px; */
     margin-bottom: 15px;
     color: #92a8df;
     background: -webkit-linear-gradient(to right, #fce2e2, #92a8df 40%, #9fb7f2 60%, #fce2e2);
@@ -348,6 +349,197 @@
         width: 70%;
     }
 }
+
+/* About Section */
+.main {
+    /* background-color: #131313; */
+    background-color: #212121;
+    background-image: linear-gradient(to bottom, #212121 0%, #000 100%);
+    padding: 3rem 0;
+  }
+  
+  .main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+  }
+  
+  .main__content {
+    color: #fff5f5;
+    width: 100%;
+  }
+  
+  .main__content h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    background-size: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .main__content span {
+    color: #92a8df;
+    background: -webkit-linear-gradient(to right, #fce2e2, #92a8df 40%, #9fb7f2 60%, #fce2e2);
+    background: linear-gradient(to right, #fce2e2, #92a8df 40%, #9fb7f2 60%, #fce2e2);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    animation: shine 7s linear infinite;
+  }
+
+  .main__content h3 {
+    font-size: 2.4rem;
+    color: #92a8df;
+    background-size: 100%;
+  }
+  
+  .main__content p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff5f5;
+    font-style: italic;
+  }
+  
+  .main__btn {
+    font-size: 1rem;
+    background: #f9f9f992;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+  }
+  
+  .main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff5f5;
+    text-decoration: none;
+  }
+  
+  .main__btn:after {
+    position: absolute;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+  
+  .main__btn:hover {
+    scale: 110%;
+  }
+  
+  .main__btn:hover:after {
+    width: 100%;
+  }
+  
+  .main__img--container {
+    text-align: center;
+  }
+  
+  .main__img--card {
+    margin-bottom: 60px;
+    height: 500px;
+    width: 500px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff5f5;
+    /* background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); */
+  }
+  
+  .fa-layer-group,
+  .fa-users {
+    font-size: 5rem;
+  }
+  
+  #card-2 {
+    background: #ff512f;
+    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+    background: linear-gradient(to right, #dd2476, #ff512f);
+  }
+  
+  /* Mobile Responsive */
+  @media screen and (max-width: 1100px) {
+    .main__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      height: 90%;
+    }
+  
+    .main__img--container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .main__img--card {
+      height: 425px;
+      width: 425px;
+    }
+  
+    .main__content {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+  
+    .main__content h1 {
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+  
+    .main__content h2 {
+      font-size: 1.3rem;
+    }
+  
+    .main__content p {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .main__img--card {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .fa-users,
+    .fa-layer-group {
+      font-size: 4rem;
+    }
+  
+    .main__content h1 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+    .main__content h2 {
+      font-size: 2rem;
+    }
+  
+    .main__content p {
+      margin-top: 2rem;
+    }
+  
+    .main__btn {
+      padding: 12px 36px;
+      margin: 2.5rem 0;
+    }
+  }
 
 /* Footer Section */
 .footer__container {
