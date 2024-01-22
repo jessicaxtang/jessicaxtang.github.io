@@ -287,8 +287,8 @@
 }
 
 .hero__description {
-    font-size: 22px;
-    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    font-family: 'Zeyada', sans-serif;
     color: #fafbff;
     margin-bottom: 24px;
     width: 60%;
@@ -296,8 +296,9 @@
 }
 
 .hero__description a {
-    text-decoration: none;
-    color: #fafbff;
+  font-family: 'Zeyada', sans-serif;
+  text-decoration: none;
+  color: #fafbff;
 }
 
 .hero__description a:hover {
