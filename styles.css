@@ -356,6 +356,7 @@
     }
 }
 
+
 /* About Section */
 .main {
     /* background-color: #131313; */
@@ -383,6 +384,7 @@
   }
   
   .main__content h1 {
+    font-family: "Ubuntu", sans-serif;
     font-size: 2.4rem;
     color: #fff;
     background-size: 100%;
@@ -419,11 +421,11 @@
   .main__btn {
     font-size: 1rem;
     background: #f9f9f992;
-    padding: 20px 60px;
+    padding: 10px 60px;
     border: none;
     border-radius: 50px;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -432,6 +434,7 @@
   
   .main__btn a {
     position: relative;
+    font-family: "Ubuntu", sans-serif;
     z-index: 2;
     color: #fff5f5;
     text-decoration: none;
