@@ -356,7 +356,6 @@
     }
 }
 
-
 /* About Section */
 .main {
     /* background-color: #131313; */
@@ -367,10 +366,11 @@
   
   .main__container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin: 20px 100px;
     height: 90%;
     z-index: 1;
     width: 100%;
@@ -385,13 +385,13 @@
   
   .main__content h1 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: #fff;
     background-size: 100%;
     margin-bottom: 1rem;
   }
   
-  .main__content span {
+  /* .main__content span {
     color: #92a8df;
     background: -webkit-linear-gradient(to right, #fce2e2, #92a8df 40%, #9fb7f2 60%, #fce2e2);
     background: linear-gradient(to right, #fce2e2, #92a8df 40%, #9fb7f2 60%, #fce2e2);
@@ -401,7 +401,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     animation: shine 7s linear infinite;
-  }
+  } */
 
   .main__content h3 {
     font-size: 2.4rem;
@@ -454,6 +454,68 @@
     width: 100%;
   }
   
+  /* ------- */
+  .main__button {
+    position: relative;
+    /* margin: auto; */
+    margin: 10px 0;
+    padding: 19px 10px;
+    transition: all 0.5s ease;
+  }
+  
+  /* Inspiration: https://dribbble.com/shots/4397812-Click-Me */
+  .main__button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: #92a8df;
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+  }
+  
+  .main__button span {
+    position: relative;
+    font-size: 2rem;
+    line-height: 18px;
+    font-weight: 600;
+    vertical-align: middle; 
+    font-family: "Ubuntu", sans-serif;
+    color: #fff5f5;
+    text-decoration: none;
+  }
+  
+  .main__button svg {
+    position: relative;
+    top: 0;
+    margin-left: 100px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--color);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .main__button:hover:before {
+    width: 100%;
+    background: #92a8df;
+  }
+  
+  .main__button:hover svg {
+    transform: translateX(0);
+  }
+  
+  .main__button:active {
+    transform: scale(0.96);
+  }
+
+/* ------- */
+
   .main__img--container {
     text-align: center;
   }
