@@ -15,7 +15,7 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kaushan+Script&family=Libre+Barcode+128+Text&family=Unbounded:wght@200..900&family=Yeseva+One&family=Zeyada&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Unbounded:wght@200..900&family=Kalnia:wght@100..700&family=Quicksand:wght@300..700&family=Zeyada&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <div class="cursor-dot-outline"></div>
@@ -43,87 +43,151 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
     <div class="hero" id="home">
         <div class="name__dot"></div>
         <div class="hero__container">
-            <h1 class="hero__heading">HEY, I'M <a href="https://stirring-jackfruit-6b7.notion.site/ABOUT-ME-dd8e3abfcdf845c68265138f086e3abc">JESS</a></h1>
+            <h1 class="hero__heading">HEY, I'M JESS</h1>
             <p class="hero__description">
                 <!-- <a href="pages/academics.html">  -->
                 <a href="https://stirring-jackfruit-6b7.notion.site/ACADEMIA-7f7e19170e984477ba9bb493e56a04fd">
                     machine intelligence
-                </a> @ the <a href="https://www.utoronto.ca/">University of Toronto</a><br> 
-                <!-- also an <a href="https://stirring-jackfruit-6b7.notion.site/INNOVATOR-e74d7bc263d44f9c8331190ddf9131ac">innovator</a> and <a href="https://stirring-jackfruit-6b7.notion.site/SINGER-39daf9395864404fad9886660a140a9a">singer</a></p> -->
-            <div id="arrow-scroll"></div>
-            <br><br><br><br><br>
-            <p class="glow">hint: my name is also hyperlinked!</p>
+                </a> @ the <a href="https://www.utoronto.ca/">University of Toronto</a>
         </div>
     </div>
 
     <!-- About Section -->
     <div class="main" id="about">
-        <div class="main__container">
+      <div class="main__container">
+          <h1 class="main__heading">about</h1>
+          <p class="main__description">i'm studying <a href="/engsci.html">machine intelligence</a>, passionate about:
+            <br>> <a href="#KITE">natural language technologies</a>
+            <br>> <a href="#">computer perception</a>
+            <br>> <a href="#">explainable and ethical AI</a>
+            <br>> creating interdisciplinary opportunities in computer science
+            <br>> and meeting others; reach out!
+          <p class="glow">...welcome</p>
+      </div>
+  </div>
 
-            <a href="https://stirring-jackfruit-6b7.notion.site/ACADEMIA-7f7e19170e984477ba9bb493e56a04fd" class="main__button">
-                <span>engineering science student</span>
-                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                  <path d="M1,5 L11,5"></path>
-                  <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-            </a>
-            <div class="main__content">
-                <!-- <h1> <span style="color:#dce6ff">engineering science student</span></h2> -->
-                <p>first principles system design</p>
-            </div>
-            <!-- <button class="main__btn"><a href="https://stirring-jackfruit-6b7.notion.site/ACADEMIA-7f7e19170e984477ba9bb493e56a04fd">see academics</a></button> -->
+  <!-- projects Section -->
+  <div class="projects" id="projects">
+    <div class="projects__container">
+      <h1 class="projects__heading">experiences</h1>
+      <div class="project"></div>
+      <div class="project" id="KITE">
+          <h2>Deep Learning Resarch Intern</h2>
+          <p>KITE Research Institute</p>
+          <ul class="contents">
+              <li>Designed a novel pipeline leveraging large language models (LLMs) to generate exercise quality assessment and textual feedback for virtual physical rehabilitation.</li>
+              <li>Trained graph network (ST-GCN) for classification and Grad-CAM for explainability and prompt experiments.</li>
+              <li>Tokenized skeletal data from an RGB camera with a variational autoencoder (VQ-VAE) for input to LLM</li>
+              <li><a href="https://transformhf.ca/funded-undergraduate-summer-research-program/">TransformHF Award Recipient</a></li>
+          </ul>
+      </div>
+  
+      <div class="project">
+          <h2>Vehicle Perception Undergraduate Researcher</h2>
+          <p>Toronto Robotics & AI Laboratory</p>
+          <ul class="contents">
+              <li>Benchmarked 3D lane detection for autonomous vehicles under <a href="https://www.boreas.utias.utoronto.ca/#/">adverse weather conditions</a>.</li>
+              <li>Implemented road-marking validation algorithms and automatic lane line labeller using 3D point cloud data</li>
+          </ul>
+      </div>
+  
+      <div class="project">
+          <h2>Machine Learning Research Assistant</h2>
+          <p>Cognitive Neuroscience & Sensorimotor Integration Lab</p>
+          <ul class="contents">
+              <li>Convolutional neural networks to model the ventral and dorsal stream.</li>
+              <li>Wrote automated EEG experiment program with user interface in MATLAB.</li>
+              <li>Built integrated motion capture automated EEG experiment in Python.</li>
+              <li>I also work as <a href="https://www.utsc.utoronto.ca/people/niemeier/people/">lab manager</a></li>
+          </ul>
+      </div>
+  
+      <div class="project">
+          <h2>Founder, Co-President</h2>
+          <p>illuminaite academy </p>
+          <ul class="contents">
+              <li>Increased accessibility to ethical CS & AI education by hosting interdisciplinary workshops</li>
+              <li>Guest speakers from IBM, MIT, and SFU</li>
+              <li>Partnered with AI4ALL, Women in Computer Science, and Computer Science Student Union.</li>
+              <li>Led a team of 20, organized 14 events, garnered 400+ participants from 42 cities and 11 countries, 2-time grant award recipient.</li>
+              <li><a href="https://illuminaite.github.io/">Website</a>, <a href="https://www.instagram.com/illuminaiteacademy/">Instagram</a></li>
+          </ul>
+      </div>
 
-            <a href="https://stirring-jackfruit-6b7.notion.site/RESEARCH-6217da83f3d24e29abd4336795e47ab6" class="main__button">
-                <span>machine learning researcher</span>
-                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                  <path d="M1,5 L11,5"></path>
-                  <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-            </a>
-            <div class="main__content">
-                <!-- <h1><span style="color:#b6c8f4"> machine learning researcher</span></h2> -->
-                <p>understanding of the mind</p>
-            </div>
-            <!-- <button class="main__btn"><a href="https://stirring-jackfruit-6b7.notion.site/RESEARCH-6217da83f3d24e29abd4336795e47ab6">see research</a></button> -->
-        
-            <a href="https://illuminaite.github.io/" class="main__button">
-                <span>ai organization founder</span>
-                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                  <path d="M1,5 L11,5"></path>
-                  <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-            </a>
-            <div class="main__content">
-                <!-- <h1><span style="color:#9fb7f2">ai organization founder</span></h2> -->
-                <p>inspiring ethical thinking</p>
-            </div>
-            <!-- <button class="main__btn"><a href="https://stirring-jackfruit-6b7.notion.site/INNOVATOR-e74d7bc263d44f9c8331190ddf9131ac">see portfolio</a></button> -->
-            
-
-        </div>
+      <div class="project">
+        <h2>Mapping Software Developer</h2>
+        <p>aUToronto</p>
+        <ul class="contents">
+            <li>Building a <a href="https://www.autodrive.utoronto.ca/">self-driving car</a></li>
+            <li>Optimized conversion pipeline of a 100,000+ node DMP map to a fully connected HD map.</li>
+        </ul>
     </div>
 
-    <!-- Footer Section -->
-    <div class="footer__container">
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <p class="website__rights">© jess 2024.</p>
-          <div class="social__icons">
-            <a href="mailto:jessicao.tang@mail.utoronto.ca" class="social__icon--link">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="#" class="social__icon--link"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="social__icon--link">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </section>
+    <div class="project">
+        <h2>Projects</h2>
+        <p>hackathons throughout the years</p>
+        <ul class="contents">
+            <li><a href="https://www.linkedin.com/posts/visit-jacklam_first-hackathon-after-24-hours-of-non-stop-ugcPost-7175269614258462720-tEo3?utm_source=share&utm_medium=member_desktop">MedMax</a>: Medical RAG Platform</li>
+            <li><a href="https://www.linkedin.com/posts/jessica-tang-532982194_articulator-by-inclusive-innovators-activity-7039672643561656320-FxWH?utm_source=share&utm_medium=member_desktop">Articulator</a>: Speech to Sign Language Translator</li>
+            <li><a href="#https://www.linkedin.com/posts/jessica-tang-532982194_the-winners-of-the-toronto-health-datathon-activity-7036519124423843841-i1Np?utm_source=share&utm_medium=member_desktop">Fracture</a>: Spinal fracture classification and segmentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- News Section -->
+  <!-- <div class="projects" id="projects">
+    <div class="projects__container">
+      <h1 class="projects__heading">in the media</h1>
+      <div class="project"></div>
+      <div class="project" id="KITE">
+          <h2>CanSat</h2>
+          <p>European Space Agency: Can-Sized Satellite</p>
+          <ul class="contents">
+              <li>Designed a novel pipeline leveraging large language models (LLMs) to generate exercise quality assessment and textual feedback for virtual physical rehabilitation.</li>
+              <li>Trained graph network (ST-GCN) for classification and Grad-CAM for explainability and prompt experiments.</li>
+              <li>Tokenized skeletal data from an RGB camera with a variational autoencoder (VQ-VAE) for input to LLM</li>
+              <li><a href="https://transformhf.ca/funded-undergraduate-summer-research-program/">TransformHF Award Recipient</a></li>
+          </ul>
+      </div>
+
+      <div class="project" id="KITE">
+        <h2>Deep Learning Resarch Intern</h2>
+        <p>KITE Research Institute</p>
+        <ul class="contents">
+            <li>Designed a novel pipeline leveraging large language models (LLMs) to generate exercise quality assessment and textual feedback for virtual physical rehabilitation.</li>
+            <li>Trained graph network (ST-GCN) for classification and Grad-CAM for explainability and prompt experiments.</li>
+            <li>Tokenized skeletal data from an RGB camera with a variational autoencoder (VQ-VAE) for input to LLM</li>
+            <li><a href="https://transformhf.ca/funded-undergraduate-summer-research-program/">TransformHF Award Recipient</a></li>
+        </ul>
     </div>
 
-    <script src="app.js"></script>
+
+
+    </div>
+  </div> -->
+
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <p class="website__rights">© jess 2024.</p>
+        <div class="social__icons">
+          <a href="mailto:jessicao.tang@mail.utoronto.ca" class="social__icon--link">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="#" class="social__icon--link"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="social__icon--link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
     
 </body>
 </html>
