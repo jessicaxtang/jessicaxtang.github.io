@@ -275,7 +275,7 @@
 }
 
 .glow {
-    font-size: 15px;
+    /* font-size: 15px; */
     font-family: 'Zeyada', sans-serif;
     color: #fff;
     text-align: left;
@@ -286,10 +286,10 @@
   
 @-webkit-keyframes glow {
     from {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #92a8df, 0 0 30px #92a8df, 0 0 40px #92a8df, 0 0 50px #92a8df, 0 0 60px #92a8df;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #92a8df, 0 0 20px #92a8df, 0 0 25px #92a8df, 0 0 30px #92a8df, 0 0 35px #e04a0e; /* 92a8df */
     }
     to {
-        text-shadow: 0 0 10px #fff, 0 0 20px #9fb7f2, 0 0 30px #9fb7f2, 0 0 40px #9fb7f2, 0 0 50px #9fb7f2, 0 0 60px #9fb7f2, 0 0 70px #9fb7f2;
+        text-shadow: 0 0 10px #fff, 0 0 15px #9fb7f2, 0 0 20px #9fb7f2, 0 0 25px #9fb7f2, 0 0 30px #9fb7f2, 0 0 35px #9fb7f2, 0 0 40px #9fb7f2;
     }
 }
 
@@ -452,7 +452,6 @@
 .projects__heading {
   font-family: "Unbounded", sans-serif; /* "Rowdies" alternative */
   font-size: 70px;
-  /* letter-spacing: 20px; */
   margin-bottom: 15px;
   color: #92a8df;
   background: -webkit-linear-gradient(to right, #fce2e2, #92a8df 40%, #9fb7f2 60%, #fce2e2);
@@ -467,21 +466,35 @@
 }
 
 .projects__container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project__link {
+    text-decoration: none; /* Remove default link styles */
+    color: inherit;        /* Inherit the text color */
+    display: block;        /* Make the link fill the container */
 }
 
 .project {
-  flex: 1 1 calc(50% - 20px); /* Each section takes 50% width minus margin */
-  margin: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-family: "Quicksand", sans-serif;
-  text-decoration: none;
-  color: #fafbff;
+    position: relative; /* To ensure the pseudo-element is positioned relative to the project box */
+    flex: 1 1 calc(50% - 20px); /* Each section takes 50% width minus margin */
+    margin: 10px;
+    padding: 20px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    color: #fafbff;
+    overflow: hidden; /* ensure ::before pseudo-element stays inside the box */
+    border: 2px solid transparent; /* Add an initial transparent border */
+}
+  
+.project:hover {
+    border-color: #9fb7f2; /* Change the border color on hover */
+    transition: border-color 0.5s ease-in-out; /* Add a transition effect */
 }
 
 .project h2 {
@@ -496,7 +509,7 @@
 .project p {
   font-size: 1.5em;
   font-family: "Zeyada", sans-serif;
-  color: #fafbff;
+  color: #fce2e2;
 }
 
 .contents {
@@ -509,12 +522,14 @@
 }
 
 .contents li a {
-  color: #007bff;
+  color: #9fb7f2;
   text-decoration: none;
+  display: inline; /* Ensure links appear inline with text */
 }
 
 .contents li a:hover {
   text-decoration: underline;
+  
 }
 
 @media (max-width: 768px) {
