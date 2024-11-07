@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: "Vollkorn", serif;
     scroll-behavior: smooth;
     cursor: none; /* none */
     background: #212121;
@@ -85,6 +86,8 @@
     color: #FFF;
     /* border: 2px solid #92a8df; */
     /* border-radius: 0px; */
+    font-family: "Vollkorn SC", serif;
+    font-size: 1.1rem;
     padding: 9px 18px;
     display: flex;
     letter-spacing: 1px;
@@ -241,11 +244,10 @@
     display: inline-block;
 }
 
-.hero__heading a {
-  font-family: "Unbounded", sans-serif;
+/* .hero__heading a {
   text-decoration: none;
   color: #fafbff;
-}
+} */
 
 @keyframes shine {
     to {
@@ -255,7 +257,7 @@
 
 .hero__description {
     font-size: 25px;
-    font-family: 'Zeyada', sans-serif;
+    font-family: "Vollkorn SC", serif;
     color: #fafbff;
     margin-bottom: 24px;
     width: 60%;
@@ -263,7 +265,8 @@
 }
 
 .hero__description a {
-  font-family: 'Zeyada', sans-serif;
+  /* font-family: 'Zeyada', sans-serif; */
+  font-family: "Vollkorn SC", serif;
   text-decoration: none;
   color: #fafbff;
 }
@@ -275,8 +278,6 @@
 }
 
 .glow {
-    /* font-size: 15px; */
-    font-family: 'Zeyada', sans-serif;
     color: #fff;
     text-align: left;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -337,12 +338,12 @@
   }
 
   50% {
-      background-color: #adadad;
+      background-color: #eab9b9;
   }
 
   100% {
       transform: scale(1.4);
-      background-color: #3f2b96;
+      background-color: #ea8dcf;
   }
 }
 
@@ -404,8 +405,9 @@
 }
 
 .main__description {
-  font-size: 25px;
-  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  /* font-family: "Quicksand", sans-serif; */
+  /* font-family: "Vollkorn SC", serif; */
   font-weight: 300;
   color: #fafbff;
   margin-bottom: 24px;
@@ -414,7 +416,7 @@
 }
 
 .main__description a {
-  font-family: "Quicksand", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
   text-decoration: none;
   color: #fafbff;
 }
@@ -443,13 +445,13 @@
   }
 }
 
-/* projects STYLES */
-.projects {
+/* portfolio STYLES */
+.portfolio {
   background: #212121;
   padding: 120px 0;
 }
 
-.projects__heading {
+.portfolio__heading {
   font-family: "Unbounded", sans-serif; /* "Rowdies" alternative */
   font-size: 70px;
   margin-bottom: 15px;
@@ -462,10 +464,10 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   animation: shine 7s linear infinite;
-  display: inline-block;
+  display: inline-block; 
 }
 
-.projects__container {
+.portfolio__container {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -473,31 +475,31 @@
     padding: 20px;
 }
 
-.project__link {
+.instance__link {
     text-decoration: none; /* Remove default link styles */
     color: inherit;        /* Inherit the text color */
     display: block;        /* Make the link fill the container */
 }
 
-.project {
-    position: relative; /* To ensure the pseudo-element is positioned relative to the project box */
-    flex: 1 1 calc(50% - 20px); /* Each section takes 50% width minus margin */
+.instance {
+    position: relative; /* To ensure the pseudo-element is positioned relative to the instance box */
+    /* flex: 1 1 calc(50% - 20px); Each section takes 50% width minus margin */
+    flex: 1 1 calc(50% - 30px);
     margin: 10px;
     padding: 20px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    font-family: "Quicksand", sans-serif;
+    box-shadow: 0 2px 5px #92a8df;
     text-decoration: none;
     color: #fafbff;
     overflow: hidden; /* ensure ::before pseudo-element stays inside the box */
     border: 2px solid transparent; /* Add an initial transparent border */
 }
   
-.project:hover {
-    border-color: #9fb7f2; /* Change the border color on hover */
+.instance:hover {
+    border-color: #eab9b9; /* Change the border color on hover */
     transition: border-color 0.5s ease-in-out; /* Add a transition effect */
 }
 
-.project h2 {
+.instance h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   /* font-family: "Quicksand", sans-serif; */
@@ -506,7 +508,7 @@
   color: #fafbff;
 }
 
-.project p {
+.instance p {
   font-size: 1.5em;
   font-family: "Zeyada", sans-serif;
   color: #fce2e2;
@@ -533,7 +535,7 @@
 }
 
 @media (max-width: 768px) {
-  .courses__container {
+  .portfolio__container {
       flex-direction: column;
   }
 }

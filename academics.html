@@ -1,6 +1,3 @@
-<!--Shortcuts
-a.navbar__links#home-page + tab creates an a tag, class, ID automatically
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +5,14 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>engineering science</title>
-    <link rel="stylesheet" href="academics.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/accfa05b72.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/jt.ico">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Unbounded:wght@200..900&family=Kalnia:wght@100..700&family=Quicksand:wght@300..700&family=Zeyada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Unbounded:wght@200..900&family=Kalnia:wght@100..700&family=Quicksand:wght@300..700&family=Vollkorn+SC:wght@400;600;700;900&family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Zeyada&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <div class="cursor-dot-outline"></div>
@@ -25,6 +22,30 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
     <nav class="navbar">
         <div class="navbar__container">
             <a href="index.html" id="navbar__logo">JT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar__menu">
+              <li class="navbar__btn">
+                <a href="/about.html" class="button">about</a>
+              </li>
+              <li class="navbar__btn">
+                <a href="/index.html#portfolio" class="button">portfolio</a>
+              </li>
+              <li class="navbar__btn">
+                <a href="/academics.html" class="button">academics</a>
+              </li>
+              <li class="navbar__btn">
+                <a href="/construction.html" class="button">research</a>
+              </li>
+              <li class="navbar__btn">
+                  <!-- <a href="https://drive.google.com/file/d/1Dljsl2FYi88p9-CeX2tJ_eEnEMkh8dNG/view?usp=sharing" class="button" target="_blank" id="contact">resume</a> -->
+                  <a href="files/Jessica_Tang_Resume.pdf" class="button" target="_blank" id="resume">resume</a>
+              </li>
+            </ul>
         </div>
     </nav>
 
@@ -37,9 +58,9 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
       </div>
   </div>
 
-  <!-- Courses Section -->
-  <div class="courses__container">
-    <div class="course">
+  <!-- portfolio Section -->
+  <div class="portfolio__container">
+    <div class="instance">
         <h2>machine intelligence</h2>
         <p>formal theory behind learning systems</p>
         <ul class="contents">
@@ -49,7 +70,7 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
         </ul>
     </div>
 
-    <div class="course">
+    <div class="instance">
         <h2>computer engineering</h2>
         <p>data structures, algorithms, object oriented & low-level programming.</p>
         <ul class="contents">
@@ -64,7 +85,7 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
         </ul>
     </div>
 
-    <div class="course">
+    <div class="instance">
         <h2>mathematics</h2>
         <p>linear algebra, calculus, statistics</p>
         <ul class="contents">
@@ -81,7 +102,7 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
         </ul>
     </div>
 
-    <div class="course">
+    <div class="instance">
         <h2>decision, design, philosophy</h2>
         <p>evaluating stakeholders, formalizing theory, making prototypes</p>
         <ul class="contents">
@@ -96,7 +117,7 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
         </ul>
     </div>
 
-    <div class="course">
+    <div class="instance">
         <h2>physics</h2>
         <p>from deterministic to probabilistic frameworks</p>
         <ul class="contents">
@@ -107,7 +128,7 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
         </ul>
     </div>
 
-    <div class="course">
+    <div class="instance">
         <h2>more...</h2>
         <p>well-rounded engineer :)</p>
         <ul class="contents">
@@ -119,9 +140,9 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
     </div>
 </div>
 
-    <!-- Footer course -->
+    <!-- Footer instance -->
     <div class="footer__container">
-      <course class="social__media">
+      <div class="social__media">
         <div class="social__media--wrap">
           <p class="website__rights">© jess 2024.</p>
           <div class="social__icons">
@@ -133,7 +154,7 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
             </a>
           </div>
         </div>
-      </course>
+    </div>
     </div>
 
     <script src="app.js"></script>
