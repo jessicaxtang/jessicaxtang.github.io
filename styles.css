@@ -231,6 +231,7 @@
     font-family: "Unbounded", sans-serif; 
     font-size: 120px;
     /* letter-spacing: 20px; */
+    padding-top: 120px;
     margin-bottom: 15px;
     color: #92a8df;
     background: -webkit-linear-gradient(to right, #fce2e2, #92a8df 40%, #9fb7f2 60%, #fce2e2);
