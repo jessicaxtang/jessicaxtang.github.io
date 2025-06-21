@@ -14,11 +14,12 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
       gtag('config', 'G-1VYYLP2HSK');
     </script>
 
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Tang</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
     <script src="https://kit.fontawesome.com/accfa05b72.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/jt.ico">
 
@@ -43,7 +44,7 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
 
             <ul class="navbar__menu">
               <li class="navbar__btn">
-                <a href="/about.html" class="button">about</a>
+                <a href="/index.html" class="button">about</a>
               </li>
               <li class="navbar__btn">
                 <a href="/index.html#portfolio" class="button">portfolio</a>
@@ -55,146 +56,231 @@ a.navbar__links#home-page + tab creates an a tag, class, ID automatically
                 <a href="/construction.html" class="button">research</a>
               </li>
               <li class="navbar__btn">
-                <a href="files/JessicaTang_CV.pdf" class="button" target="_blank" id="CV">CV</a>
+                  <!-- <a href="https://drive.google.com/file/d/1Dljsl2FYi88p9-CeX2tJ_eEnEMkh8dNG/view?usp=sharing" class="button" target="_blank" id="contact">resume</a> -->
+                  <a href="files/JessicaTang_CV.pdf" class="button" target="_blank" id="CV">CV</a>
               </li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero" id="home">
+    <!-- <div class="hero" id="home">
         <div class="name__dot"></div>
         <div class="hero__container">
             <h1 class="hero__heading">HEY, I'M JESS</h1>
             <p class="hero__description">
-                <a href="/index.html#portfolio">researcher</a>, musician, and <a href="https://illuminaite.github.io/">founder</a>
+                <a href="/academics.html">researcher</a>, musician, and <a href="#ILLUMINAITE">founder</a>
         </div>
-    </div>
+    </div> -->
 
     <!-- About Section -->
-    <!-- <div class="main" id="about">
-      <div class="main__container">
-          <h1 class="main__heading">about</h1>
-          <p class="main__description">
-            <br>> studying <a class="glow" href="/academics.html">machine intelligence</a> @ the <a href="https://www.utoronto.ca/">University of Toronto</a>
-            <br>> researching <a href="#portfolio">natural language technologies</a> and <a href="#portfolio">computer perception</a>
-            <br>> advocating for <a href="#KITE">explainable and ethical AI</a>
-            <br>> creating <a href="#CONSENS">interdisciplinary opportunities</a> in computer science
-          <p class="glow">...and meeting others; reach out!</p>
-      </div>
-  </div> -->
+    <div class="main" id="about">
+        <div class="main__container">
+        <div class="main__text">
+            <h1 class="main__heading">jessica tang</h1>
+            <p class="main__description">
 
-  <!-- portfolio Section -->
-  <div class="portfolio" id="portfolio">
-    <div class="portfolio__container">
-      <!-- <h1 class="portfolio__heading">portfolio</h1> -->
-      <!-- <div class="instance"></div> -->
-      <a href="/construction.html" class="instance__link">
-        <div class="instance" id="KITE">
-            <h2>Deep Learning Research Intern</h2>
-            <p>KITE Research Institute</p>
-            <ul class="contents">
-                <li>Designed a novel pipeline leveraging large language models (LLMs) to generate exercise quality assessment and textual feedback for virtual physical rehabilitation.</li>
-                <li>Trained graph network (ST-GCN) for classification and Grad-CAM for explainability and prompt experiments.</li>
-                <li>Tokenized skeletal data from an RGB camera with a variational autoencoder (VQ-VAE) for input to LLM</li>
-                <li><a href="https://transformhf.ca/funded-undergraduate-summer-research-program/">TransformHF Award Recipient</a></li>
-            </ul>
-        </div>
-      </a>
-      <a href="/construction.html" class="instance__link">
-        <div class="instance" id="TRAIL">
-            <h2>Vehicle Perception Undergraduate Researcher</h2>
-            <p>Toronto Robotics & AI Laboratory</p>
-            <ul class="contents">
-                <li>Benchmarked 3D lane detection for autonomous vehicles under <a href="https://www.boreas.utias.utoronto.ca/#/">adverse weather conditions</a>.</li>
-                <li>Implemented road-marking validation algorithms and automatic lane line labeller using 3D point cloud data</li>
-            </ul>
-        </div>
-      </a>
-      
-      <a href="/construction.html" class="instance__link">
-        <div class="instance" id="CONSENS">
-            <h2>Computational Neuroscience Research Assistant</h2>
-            <p>Cognitive Neuroscience & Sensorimotor Integration Lab</p>
-            <ul class="contents">
-                <li>Convolutional neural networks to model the ventral and dorsal stream.</li>
-                <li>Wrote automated EEG experiment program with user interface in MATLAB.</li>
-                <li>Built integrated motion capture automated EEG experiment in Python.</li>
-                <li>I also work as <a href="https://www.utsc.utoronto.ca/people/niemeier/people/">lab manager</a></li>
-            </ul>
-        </div>
-      </a>
-      <a href="/construction.html" class="instance__link">
-        <div class="instance" id="ILLUMINAITE">
-            <h2>Founder, Co-President</h2>
-            <p>illuminaite academy </p>
-            <ul class="contents">
-                <li>Increased accessibility to ethical CS & AI education by hosting interdisciplinary workshops</li>
-                <li>Guest speakers from IBM, MIT, and SFU</li>
-                <li>Partnered with AI4ALL, Women in Computer Science, and Computer Science Student Union.</li>
-                <li>Led a team of 20, organized 14 events, garnered 400+ participants from 42 cities and 11 countries, 2-time grant award recipient.</li>
-                <li><a href="https://illuminaite.github.io/">Website</a>, <a href="https://www.instagram.com/illuminaiteacademy/">Instagram</a></li>
-            </ul>
-        </div>
-      </a>
+            Hi, I'm Jessica. I'm deeply interested in researching and developing interpretable, explainable AI systems to help society.
+            I'm currently interning at <a class="glow" href="https://www.microsoft.com/en-us/research/about-microsoft-research/">microsoft research</a>
+            and am studying <a class="glow" href="/academics.html">machine intelligence</a> at the <a href="https://www.utoronto.ca/">University of Toronto</a>.
+            <br><br>
+            I am also the founder and co-president of <a class="glow" href="https://www.illuminaite.org/">illuminaite academy</a>, advocating for explainable and ethical AI</a>
+            and lowering the barrier to entry for students outside computer science to learn about AI.
 
-      <a href="/construction.html" class="instance__link">
-        <div class="instance" id="AUTORONTO">
-          <h2>Mapping Software Developer</h2>
-          <p>aUToronto</p>
-          <ul class="contents">
-              <li>Building a <a href="https://www.autodrive.utoronto.ca/">self-driving car</a></li>
-              <li>Optimized conversion pipeline of a 100,000+ node DMP map to a fully connected HD map.</li>
-          </ul>
+            <br><br>
+            <a href="mailto:jessicao.tang@mail.utoronto.ca" style="text-decoration: underline;">Email</a> / <a href="https://www.linkedin.com/in/jessica-tang-532982194/" style="text-decoration: underline;">LinkedIn</a> / <a href="https://scholar.google.com/citations?user=IEvZRL8AAAAJ&hl=en&oi=sra" style="text-decoration: underline;">Google Scholar</a>
+            </p>
         </div>
-      </a>
-
-    <a href="/construction.html" class="instance__link">
-      <div class="instance" id="HACKATHONS">
-          <h2>Hackathons</h2>
-          <p>portfolio throughout the years</p>
-          <ul class="contents">
-              <li><a href="https://www.linkedin.com/posts/visit-jacklam_first-hackathon-after-24-hours-of-non-stop-ugcPost-7175269614258462720-tEo3?utm_source=share&utm_medium=member_desktop">MedMax</a>: Medical RAG Platform</li>
-              <li><a href="https://www.linkedin.com/posts/jessica-tang-532982194_articulator-by-inclusive-innovators-activity-7039672643561656320-FxWH?utm_source=share&utm_medium=member_desktop">Articulator</a>: Speech to Sign Language Translator</li>
-              <li><a href="#https://www.linkedin.com/posts/jessica-tang-532982194_the-winners-of-the-toronto-health-datathon-activity-7036519124423843841-i1Np?utm_source=share&utm_medium=member_desktop">Fracture</a>: Spinal fracture classification and segmentation</li>
-          </ul>
-      </div>
-    </a>
-
-    </div>
+        <div class="main__img">
+            <img src="files/headshot.png" alt="Headshot Image">
+        </div>
+        </div>
   </div>
 
-  <!-- News Section -->
-  <!-- <div class="portfolio" id="portfolio">
-    <div class="portfolio__container">
-      <h1 class="portfolio__heading">in the media</h1>
-      <div class="instance"></div>
-      <div class="instance" id="KITE">
-          <h2>CanSat</h2>
-          <p>European Space Agency: Can-Sized Satellite</p>
-          <ul class="contents">
-              <li>Designed a novel pipeline leveraging large language models (LLMs) to generate exercise quality assessment and textual feedback for virtual physical rehabilitation.</li>
-              <li>Trained graph network (ST-GCN) for classification and Grad-CAM for explainability and prompt experiments.</li>
-              <li>Tokenized skeletal data from an RGB camera with a variational autoencoder (VQ-VAE) for input to LLM</li>
-              <li><a href="https://transformhf.ca/funded-undergraduate-summer-research-program/">TransformHF Award Recipient</a></li>
+  <!-- highlights -->
+  <div class="highlights" id="highlights">
+    <div class="highlights__container">
+      <!-- <h1 class="highlights__heading">highlights</h1> -->
+      <div class="highlights__content">
+        <div class="highlight__item">
+          <h2>highlights</h2>
+          <ul class="highlight__list">
+            <li> <strong>Microsoft Research:</strong> interpretability in multi-agent LLM systems</li>
+            <li> <strong>Accepted IJCAI 2025 ARIAL Paper:</strong> Rehabilitation Exercise Quality Assessment and Feedback Generation Using Large Language Models with Prompt Engineering 
+               <a href="https://arxiv.org/abs/2505.18412v1" style="text-decoration: underline;">[ArXiv]</a></li>
+            <li><strong>Globe and Mail feature:</strong> Some university professors say AI is here to stay, so students should learn how to use it <a href="https://www.theglobeandmail.com/canada/article-ai-university-professors-students-study-tool/" style="text-decoration: underline;">[Article]</a></li>
+            <li><strong>Scholarship:</strong> Top 5 students awarded the RBC Award for Diversity and Innovation in Technology <a href="https://entrepreneurs.utoronto.ca/social-impact-and-health-innovation-among-priorities-for-winners-of-the-rbc-award-for-diversity-and-innovation-in-technology/" style="text-decoration: underline;">[Article]</a></li>
           </ul>
+        </div>
       </div>
-
-      <div class="instance" id="KITE">
-        <h2>Deep Learning Resarch Intern</h2>
-        <p>KITE Research Institute</p>
-        <ul class="contents">
-            <li>Designed a novel pipeline leveraging large language models (LLMs) to generate exercise quality assessment and textual feedback for virtual physical rehabilitation.</li>
-            <li>Trained graph network (ST-GCN) for classification and Grad-CAM for explainability and prompt experiments.</li>
-            <li>Tokenized skeletal data from an RGB camera with a variational autoencoder (VQ-VAE) for input to LLM</li>
-            <li><a href="https://transformhf.ca/funded-undergraduate-summer-research-program/">TransformHF Award Recipient</a></li>
-        </ul>
     </div>
+  </div>  
+  
 
 
+    <!-- portfolio Section -->
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio__container">
+        <!-- <h1 class="portfolio__heading">portfolio</h1> -->
+        
+        <div class="instance" id="education">
+            <h2>Education & Research</h2>
+            <p>University of Toronto</p>
+            <ul class="contents">
+              <li>Bachelor of Applied Science in Engineering Science</li>
+              <li>Machine Intelligence (2022-2026)</li>
+            </ul>
+            <br>
 
+            <p>Microsoft Research</p>
+            <ul class="contents">
+              <li>Undergraduate Research Intern (2025)</li>
+            </ul>
+            <br>
+
+            <p>KITE Research Institute</p>
+            <ul class="contents">
+              <li>Deep Learning Researcher (2024-Present)</li>
+            </ul>
+            <br>
+
+            <p>Toronto Robotics and AI Lab</p>
+            <ul class="contents">
+              <li>Undergraduate Researcher (2024-Present)</li>
+            </ul>
+            <br>
+
+            <p>Cognitive Neuroscience and Sensorimotor Integration Lab</p>
+            <ul class="contents">
+              <li>Lab Manager (2024-Present)</li>
+              <li>Computational Neuroscience Research Assistant (2023-Present)</li>
+            </ul>
+            <br>
+
+            <p>aUToronto</p>
+            <ul class="contents">
+              <li>Mapping Software Developer (2022-2023)</li>
+            </ul>
+        </div>
+    
+        <div class="instance" id="leadership">
+            <h2>Leadership & Fellowships</h2>
+            <p>Illuminaite Academy</p>
+            <ul class="contents">
+              <li>Founder, Co-President (2020-Present)</li>
+              <li>Two-Time AI4Impact Grant Award Winner</li>
+            </ul>
+            <br>
+            <p>New York Academy of Sciences</p>
+            <ul class="contents">
+              <li>Junior Academy (2021-2022)</li>
+              <li>1000 Girls, 1000 Futures Scholar (2020-2021)</li>
+            </ul>
+            <br>
+            <p>AI4ALL Scholars Program</p>
+            <ul class="contents">
+              <li>AI Education Curriculum Developer (2021)</li>
+              <li>Artificial Intelligence Scholar (2020)</li>
+            </ul>
+            <br>
+            <p>Other:</p>
+            <ul class="contents">
+              <li>University of Waterloo Quantum Computing Fellow (2021)</li>
+              <li>Student Council President (2021-2022)</li>
+              <li>Co-President Project Tech Conferences (2021-2022)</li>
+              <li>Wave Learning Festival Seminar Instructor (2021)</li>
+            </ul>
+        </div>
+        
+        <!-- awards & honours -->
+        <div class="instance" id="awards">
+            <h2>Awards & Honours</h2>
+            <p>University of Toronto</p>
+            <ul class="contents">
+            <li>RBC Award for Diversity and Innovation in Technology (2024)</li>
+            <li>Transform HF Research Award (2024)</li>
+            <li>Dean's Merit Award (2022)</li>
+            </ul>
+            <br>
+            <p>European Space Agency</p>
+            <ul class="contents">
+            <li>International Finalist, Outstanding Paper Award (2022)</li>
+            <li> National CanSat Challenge Winner (2022)</li>
+            </ul>
+            <br>
+            <p>Nanyang Technological University</p>
+            <ul class="contents">
+            <li>Best Presenter (2021)</li>
+            <li>International Student Conference On Artificial Intelligence</li>
+            </ul>
+            <br>
+            <p>Other:</p>
+            <ul class="contents">
+                <li>Best Project Overall, Best Cohere Project NSBE Hackathon (2023)</li>
+                <li>First Place Winner Toronto Health Datathon (2023)</li>
+                <li>Ingenious+ National Finalist and Regional Innovation Winner (2022)</li>
+                <li>BC Youth Innovation Showcase Finalist (Top 5) (2021)</li>
+                <li>BC/Yukon Science Fair Greenhouse Growers' Award (2021)</li>
+                <li>Student Leadership Award of the Year (2021)</li>
+                <li>Margaret Labelle Leadership Award SYO (2021, 2022)</li>
+                <li>Student Leadership and Service Award FHSS (2019)</li>
+            </ul>
+        </div>
+    
+        <div class="instance" id="music">
+            <h2>Music</h2>
+            <p>Royal Conservatory of Canada</p>
+            <ul class="contents">
+              <li>Associate Diploma (ARCT) in Violin, Performer (2022)</li>
+              <li>Associate Diploma (ARCT) in Piano, Performer (2021)</li>
+              <li>Regional Gold Medal in Level 6 Violin (2016)</li>
+            </ul>
+            <br>
+            <p>KPU International Music Festival</p>
+            <ul class="contents">
+              <li>Chamber Music Platinum Award and Provincial Delegate (2022)</li>
+              <li>Senior Piano, Solo Violin Provincial Delegate (2021)</li>
+              <li>Outstanding Senior Level Performer Scholarship Piano, Violin (2021)</li>
+              <li>Provincial Delegate, Outstanding Performer Award Recipient (2020)</li>
+            </ul>
+
+            <br>
+            <p>Other:</p>
+            <ul class="contents">
+                <li>Dorothy Wiesner Memorial Scholarship (2020)</li>
+                <li>Four-Time First Place SYO Scholarship Winner (2017-2021)</li>
+                <li>Outstanding Achievement in Choir Award (2018)</li>
+
+            </ul>
+        </div>
+    
+        <div class="instance" id="publications">
+            <h2>Publications</h2>
+            <p>Rehabilitation Exercise Quality Assessment and Feedback Generation Using Large Language Models with Prompt Engineering</p>
+            <ul class="contents">
+              <li>Authors: <i>Jessica Tang</i>, Ali Abedi, Tracey J.F. Colella, Shehroz S. Khan</li>
+              <li>Accepted to the International Joint Conference on Artificial Intelligence (IJCAI) ARIAL Workshop (2025)</li>
+              <li>Paper: <a href="https://arxiv.org/abs/2505.18412v1" style="text-decoration: underline;">[ArXiv]</a></li>
+            </ul>
+            <br>
+
+
+            <p>Deep Reinforcement Learning Controller for Indoor Farming</p>
+            <ul class="contents">
+              <li>Author: <i>Jessica Tang</i></li>
+              <li>Accepted to the International Student Conference on Artificial Intelligence (STCAI), Nanyang Technological University (2021)</li>
+            </ul>
+            <br>
+            <p>Does Mass Media Enable Genocide?</p>
+            <ul class="contents">
+              <li>Author: <i>Jessica Tang</i></li>
+              <li>Harvard College Undergraduate Research Association (2020)</li>
+            </ul>
+            <br>
+        </div>
+
+        </div>
     </div>
-  </div> -->
 
   <!-- Footer Section -->
   <div class="footer__container">

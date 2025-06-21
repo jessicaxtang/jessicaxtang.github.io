@@ -1,0 +1,219 @@
+<!--Shortcuts
+a.navbar__links#home-page + tab creates an a tag, class, ID automatically
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VYYLP2HSK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1VYYLP2HSK');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Tang</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/accfa05b72.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/jt.ico">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Unbounded:wght@200..900&family=Kalnia:wght@100..700&family=Quicksand:wght@300..700&family=Vollkorn+SC:wght@400;600;700;900&family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">JT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar__menu">
+              <li class="navbar__btn">
+                <a href="/about.html" class="button">about</a>
+              </li>
+              <li class="navbar__btn">
+                <a href="/index.html#portfolio" class="button">portfolio</a>
+              </li>
+              <li class="navbar__btn">
+                <a href="/academics.html" class="button">academics</a>
+              </li>
+              <li class="navbar__btn">
+                <a href="/construction.html" class="button">research</a>
+              </li>
+              <li class="navbar__btn">
+                <a href="files/JessicaTang_CV.pdf" class="button" target="_blank" id="CV">CV</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="name__dot"></div>
+        <div class="hero__container">
+            <h1 class="hero__heading">HEY, I'M JESS</h1>
+            <p class="hero__description">
+                <a href="/index.html#portfolio">researcher</a>, musician, and <a href="https://illuminaite.github.io/">founder</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <!-- <div class="main" id="about">
+      <div class="main__container">
+          <h1 class="main__heading">about</h1>
+          <p class="main__description">
+            <br>> studying <a class="glow" href="/academics.html">machine intelligence</a> @ the <a href="https://www.utoronto.ca/">University of Toronto</a>
+            <br>> researching <a href="#portfolio">natural language technologies</a> and <a href="#portfolio">computer perception</a>
+            <br>> advocating for <a href="#KITE">explainable and ethical AI</a>
+            <br>> creating <a href="#CONSENS">interdisciplinary opportunities</a> in computer science
+          <p class="glow">...and meeting others; reach out!</p>
+      </div>
+  </div> -->
+
+  <!-- portfolio Section -->
+  <div class="portfolio" id="portfolio">
+    <div class="portfolio__container">
+      <!-- <h1 class="portfolio__heading">portfolio</h1> -->
+      <!-- <div class="instance"></div> -->
+      <a href="/construction.html" class="instance__link">
+        <div class="instance" id="KITE">
+            <h2>Deep Learning Research Intern</h2>
+            <p>KITE Research Institute</p>
+            <ul class="contents">
+                <li>Designed a novel pipeline leveraging large language models (LLMs) to generate exercise quality assessment and textual feedback for virtual physical rehabilitation.</li>
+                <li>Trained graph network (ST-GCN) for classification and Grad-CAM for explainability and prompt experiments.</li>
+                <li>Tokenized skeletal data from an RGB camera with a variational autoencoder (VQ-VAE) for input to LLM</li>
+                <li><a href="https://transformhf.ca/funded-undergraduate-summer-research-program/">TransformHF Award Recipient</a></li>
+            </ul>
+        </div>
+      </a>
+      <a href="/construction.html" class="instance__link">
+        <div class="instance" id="TRAIL">
+            <h2>Vehicle Perception Undergraduate Researcher</h2>
+            <p>Toronto Robotics & AI Laboratory</p>
+            <ul class="contents">
+                <li>Benchmarked 3D lane detection for autonomous vehicles under <a href="https://www.boreas.utias.utoronto.ca/#/">adverse weather conditions</a>.</li>
+                <li>Implemented road-marking validation algorithms and automatic lane line labeller using 3D point cloud data</li>
+            </ul>
+        </div>
+      </a>
+      
+      <a href="/construction.html" class="instance__link">
+        <div class="instance" id="CONSENS">
+            <h2>Computational Neuroscience Research Assistant</h2>
+            <p>Cognitive Neuroscience & Sensorimotor Integration Lab</p>
+            <ul class="contents">
+                <li>Convolutional neural networks to model the ventral and dorsal stream.</li>
+                <li>Wrote automated EEG experiment program with user interface in MATLAB.</li>
+                <li>Built integrated motion capture automated EEG experiment in Python.</li>
+                <li>I also work as <a href="https://www.utsc.utoronto.ca/people/niemeier/people/">lab manager</a></li>
+            </ul>
+        </div>
+      </a>
+      <a href="/construction.html" class="instance__link">
+        <div class="instance" id="ILLUMINAITE">
+            <h2>Founder, Co-President</h2>
+            <p>illuminaite academy </p>
+            <ul class="contents">
+                <li>Increased accessibility to ethical CS & AI education by hosting interdisciplinary workshops</li>
+                <li>Guest speakers from IBM, MIT, and SFU</li>
+                <li>Partnered with AI4ALL, Women in Computer Science, and Computer Science Student Union.</li>
+                <li>Led a team of 20, organized 14 events, garnered 400+ participants from 42 cities and 11 countries, 2-time grant award recipient.</li>
+                <li><a href="https://illuminaite.github.io/">Website</a>, <a href="https://www.instagram.com/illuminaiteacademy/">Instagram</a></li>
+            </ul>
+        </div>
+      </a>
+
+      <a href="/construction.html" class="instance__link">
+        <div class="instance" id="AUTORONTO">
+          <h2>Mapping Software Developer</h2>
+          <p>aUToronto</p>
+          <ul class="contents">
+              <li>Building a <a href="https://www.autodrive.utoronto.ca/">self-driving car</a></li>
+              <li>Optimized conversion pipeline of a 100,000+ node DMP map to a fully connected HD map.</li>
+          </ul>
+        </div>
+      </a>
+
+    <a href="/construction.html" class="instance__link">
+      <div class="instance" id="HACKATHONS">
+          <h2>Hackathons</h2>
+          <p>portfolio throughout the years</p>
+          <ul class="contents">
+              <li><a href="https://www.linkedin.com/posts/visit-jacklam_first-hackathon-after-24-hours-of-non-stop-ugcPost-7175269614258462720-tEo3?utm_source=share&utm_medium=member_desktop">MedMax</a>: Medical RAG Platform</li>
+              <li><a href="https://www.linkedin.com/posts/jessica-tang-532982194_articulator-by-inclusive-innovators-activity-7039672643561656320-FxWH?utm_source=share&utm_medium=member_desktop">Articulator</a>: Speech to Sign Language Translator</li>
+              <li><a href="#https://www.linkedin.com/posts/jessica-tang-532982194_the-winners-of-the-toronto-health-datathon-activity-7036519124423843841-i1Np?utm_source=share&utm_medium=member_desktop">Fracture</a>: Spinal fracture classification and segmentation</li>
+          </ul>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <!-- News Section -->
+  <!-- <div class="portfolio" id="portfolio">
+    <div class="portfolio__container">
+      <h1 class="portfolio__heading">in the media</h1>
+      <div class="instance"></div>
+      <div class="instance" id="KITE">
+          <h2>CanSat</h2>
+          <p>European Space Agency: Can-Sized Satellite</p>
+          <ul class="contents">
+              <li>Designed a novel pipeline leveraging large language models (LLMs) to generate exercise quality assessment and textual feedback for virtual physical rehabilitation.</li>
+              <li>Trained graph network (ST-GCN) for classification and Grad-CAM for explainability and prompt experiments.</li>
+              <li>Tokenized skeletal data from an RGB camera with a variational autoencoder (VQ-VAE) for input to LLM</li>
+              <li><a href="https://transformhf.ca/funded-undergraduate-summer-research-program/">TransformHF Award Recipient</a></li>
+          </ul>
+      </div>
+
+      <div class="instance" id="KITE">
+        <h2>Deep Learning Resarch Intern</h2>
+        <p>KITE Research Institute</p>
+        <ul class="contents">
+            <li>Designed a novel pipeline leveraging large language models (LLMs) to generate exercise quality assessment and textual feedback for virtual physical rehabilitation.</li>
+            <li>Trained graph network (ST-GCN) for classification and Grad-CAM for explainability and prompt experiments.</li>
+            <li>Tokenized skeletal data from an RGB camera with a variational autoencoder (VQ-VAE) for input to LLM</li>
+            <li><a href="https://transformhf.ca/funded-undergraduate-summer-research-program/">TransformHF Award Recipient</a></li>
+        </ul>
+    </div>
+
+
+
+    </div>
+  </div> -->
+
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <p class="website__rights">© jess 2024.</p>
+        <div class="social__icons">
+          <a href="mailto:jessicao.tang@mail.utoronto.ca" class="social__icon--link">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="social__icon--link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+    
+</body>
+</html>
