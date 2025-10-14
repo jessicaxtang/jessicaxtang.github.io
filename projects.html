@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VYYLP2HSK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1VYYLP2HSK');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlights | Jessica Tang</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/accfa05b72.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/jt.ico">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Unbounded:wght@200..900&family=Kalnia:wght@100..700&family=Quicksand:wght@300..700&family=Vollkorn+SC:wght@400;600;700;900&family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Zeyada&display=swap" rel="stylesheet">
+</head>
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+<body class="project-page">
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+    
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">JT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+              <li class="navbar__btn">
+                <a href="/index.html" class="button">about</a>
+              </li>
+              <li class="navbar__btn">
+                <a href="/highlights.html" class="button">highlights</a>
+              </li>
+              <li class="navbar__btn">
+                <a href="/research.html" class="button">research</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- project Main Section -->
+    <div class="main" id="project-main">
+      <div class="main__container">
+        <div class="main__text">
+          <h1 class="main__heading">highlights</h1>
+          <p class="main__description">
+            <br>> a collection of my work spanning research, engineering, leadership, and creative pursuits
+            <br>> click on any card to learn more about each project
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- project Cards Section -->
+    <div class="project-cards__container">
+      
+      <!-- Card 1: Education & Research -->
+      <div class="project-card" onclick="toggleCard(this)">
+        <div class="project-card__image">
+          <img src="files/tokengeist.gif" alt="LLM Interpretability" onerror="this.src='files/placeholder.png'">
+        </div>
+        <div class="project-card__content">
+          <h3>LLM Interpretability<i class="fas fa-chevron-down toggle-icon"></i></h3>
+          <p class="project-card__summary">figuring out what goes on inside large language models</p>
+          <div class="project-card__details">
+            <div class="detail-section">
+              <h4>University of Toronto</h4>
+              <p>Bachelor of Applied Science in Engineering Science</p>
+              <ul>
+                <li>Machine Intelligence (2022-2026)</li>
+                <li>Specialization in deep learning, computer vision, and AI systems</li>
+                <li>Dean's Merit Award recipient</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Microsoft Research</h4>
+              <p>Undergraduate Research Intern (2025)</p>
+              <ul>
+                <li>Working on interpretability in multi-agent LLM systems</li>
+                <li>Developing methods to understand and explain AI agent behavior</li>
+                <li>Collaborating with researchers on cutting-edge AI safety research</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>KITE Research Institute</h4>
+              <p>Deep Learning Researcher (2024-Present)</p>
+              <ul>
+                <li>Developing AI systems for rehabilitation exercise assessment</li>
+                <li>Published paper at IJCAI 2025 ARIAL Workshop</li>
+                <li>Working with large language models and computer vision</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Toronto Robotics and AI Lab</h4>
+              <p>Undergraduate Researcher (2024-Present)</p>
+              <ul>
+                <li>Research in robotics perception and planning</li>
+                <li>Working on autonomous systems and machine learning applications</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Cognitive Neuroscience and Sensorimotor Integration Lab</h4>
+              <p>Lab Manager & Research Assistant (2023-Present)</p>
+              <ul>
+                <li>Managing lab operations and coordinating research projects</li>
+                <li>Computational neuroscience research on sensorimotor learning</li>
+                <li>Data analysis and experimental design</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>aUToronto</h4>
+              <p>Mapping Software Developer (2022-2023)</p>
+              <ul>
+                <li>Developed mapping and localization software for autonomous vehicles</li>
+                <li>Contributed to UofT's self-driving car team</li>
+                <li>Worked with ROS, sensor fusion, and path planning algorithms</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Leadership & Fellowships -->
+      <div class="project-card" onclick="toggleCard(this)">
+        <div class="project-card__image">
+          <img src="files/esa_cansat.gif" alt="Leadership & Fellowships" onerror="this.src='files/placeholder.png'">
+        </div>
+        <div class="project-card__content">
+          <h3>Leadership & Fellowships <i class="fas fa-chevron-down toggle-icon"></i></h3>
+          <p class="project-card__summary">Founding illuminAI and participating in prestigious fellowship programs</p>
+          <div class="project-card__details">
+            <div class="detail-section">
+              <h4>Illuminaite Academy</h4>
+              <p>Founder, President (2020-Present)</p>
+              <ul>
+                <li>Founded a non-profit organization dedicated to AI education and ethics</li>
+                <li>Two-Time AI4Impact Grant Award Winner</li>
+                <li>Created workshops and curriculum to make AI accessible to students</li>
+                <li>Built a community of learners passionate about responsible AI</li>
+                <li>Visit: <a href="https://www.illuminaite.org/" style="text-decoration: underline;">illuminaite.org</a></li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>New York Academy of Sciences</h4>
+              <p>Junior Academy & 1000 Girls, 1000 Futures Scholar</p>
+              <ul>
+                <li>Junior Academy (2021-2022)</li>
+                <li>1000 Girls, 1000 Futures Scholar (2020-2021)</li>
+                <li>Participated in collaborative STEM research projects</li>
+                <li>Mentored by industry professionals in AI and technology</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>AI4ALL Scholars Program</h4>
+              <p>AI Education Curriculum Developer & Scholar</p>
+              <ul>
+                <li>AI Education Curriculum Developer (2021)</li>
+                <li>Artificial Intelligence Scholar (2020)</li>
+                <li>Developed educational materials for high school students</li>
+                <li>Learned from leading AI researchers and practitioners</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>University of Waterloo</h4>
+              <p>Quantum Computing Fellow (2021)</p>
+              <ul>
+                <li>Completed intensive quantum computing fellowship program</li>
+                <li>Studied quantum algorithms and quantum machine learning</li>
+                <li>Engaged with cutting-edge quantum computing research</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Student Leadership</h4>
+              <p>Various Leadership Roles</p>
+              <ul>
+                <li>Student Council President (2021-2022)</li>
+                <li>Co-President Project Tech Conferences (2021-2022)</li>
+                <li>Wave Learning Festival Seminar Instructor (2021)</li>
+                <li>Led initiatives to promote STEM education and student engagement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Awards & Honours -->
+      <div class="project-card" onclick="toggleCard(this)">
+        <div class="project-card__image">
+          <img src="files/optitrack.gif" alt="Awards & Honours" onerror="this.src='files/placeholder.png'">
+        </div>
+        <div class="project-card__content">
+          <h3>Awards & Honours <i class="fas fa-chevron-down toggle-icon"></i></h3>
+          <p class="project-card__summary">Recognition for academic excellence, innovation, and leadership</p>
+          <div class="project-card__details">
+            <div class="detail-section">
+              <h4>University of Toronto</h4>
+              <ul>
+                <li>RBC Award for Diversity and Innovation in Technology (2024)</li>
+                <li>Transform HF Research Award (2024)</li>
+                <li>Dean's Merit Award (2022)</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>European Space Agency</h4>
+              <ul>
+                <li>International Finalist, Outstanding Paper Award (2022)</li>
+                <li>National CanSat Challenge Winner (2022)</li>
+                <li>Recognized for excellence in aerospace engineering and satellite design</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Nanyang Technological University</h4>
+              <ul>
+                <li>Best Presenter Award (2021)</li>
+                <li>International Student Conference On Artificial Intelligence</li>
+                <li>Presented research on deep reinforcement learning for indoor farming</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Hackathons & Competitions</h4>
+              <ul>
+                <li>Best Project Overall, Best Cohere Project - NSBE Hackathon (2023)</li>
+                <li>First Place Winner - Toronto Health Datathon (2023)</li>
+                <li>Ingenious+ National Finalist and Regional Innovation Winner (2022)</li>
+                <li>BC Youth Innovation Showcase Finalist - Top 5 (2021)</li>
+                <li>BC/Yukon Science Fair Greenhouse Growers' Award (2021)</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Leadership Awards</h4>
+              <ul>
+                <li>Student Leadership Award of the Year (2021)</li>
+                <li>Margaret Labelle Leadership Award SYO (2021, 2022)</li>
+                <li>Student Leadership and Service Award FHSS (2019)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: ESA CanSat -->
+      <div class="project-card" onclick="toggleCard(this)">
+        <div class="project-card__image">
+          <img src="files/esa_cansat.gif" alt="Music" onerror="this.src='files/placeholder.png'">
+        </div>
+        <div class="project-card__content">
+          <h3>Music <i class="fas fa-chevron-down toggle-icon"></i></h3>
+          <p class="project-card__summary">Classical performance achievements in violin and piano</p>
+          <div class="project-card__details">
+            <div class="detail-section">
+              <h4>Royal Conservatory of Canada</h4>
+              <ul>
+                <li>Associate Diploma (ARCT) in Violin, Performer (2022)</li>
+                <li>Associate Diploma (ARCT) in Piano, Performer (2021)</li>
+                <li>Regional Gold Medal in Level 6 Violin (2016)</li>
+                <li>Highest level of achievement in classical music performance</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>KPU International Music Festival</h4>
+              <ul>
+                <li>Chamber Music Platinum Award and Provincial Delegate (2022)</li>
+                <li>Senior Piano, Solo Violin Provincial Delegate (2021)</li>
+                <li>Outstanding Senior Level Performer Scholarship - Piano, Violin (2021)</li>
+                <li>Provincial Delegate, Outstanding Performer Award Recipient (2020)</li>
+                <li>Consistent excellence in competitive music performance</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Scholarships & Awards</h4>
+              <ul>
+                <li>Dorothy Wiesner Memorial Scholarship (2020)</li>
+                <li>Four-Time First Place SYO Scholarship Winner (2017-2021)</li>
+                <li>Outstanding Achievement in Choir Award (2018)</li>
+                <li>Recognition for musical excellence and dedication</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Performance Experience</h4>
+              <ul>
+                <li>Solo recitals in violin and piano</li>
+                <li>Chamber music collaborations</li>
+                <li>Orchestral and ensemble performances</li>
+                <li>Balancing artistic expression with technical rigor</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Publications -->
+      <div class="project-card" onclick="toggleCard(this)">
+        <div class="project-card__image">
+          <img src="files/publications.gif" alt="Publications" onerror="this.src='files/placeholder.png'">
+        </div>
+        <div class="project-card__content">
+          <h3>Publications <i class="fas fa-chevron-down toggle-icon"></i></h3>
+          <p class="project-card__summary">Research papers in AI, machine learning, and interdisciplinary topics</p>
+          <div class="project-card__details">
+            <div class="detail-section">
+              <h4>Rehabilitation Exercise Quality Assessment and Feedback Generation Using Large Language Models with Prompt Engineering</h4>
+              <p>IJCAI 2025 ARIAL Workshop</p>
+              <ul>
+                <li>Authors: <i>Jessica Tang</i>, Ali Abedi, Tracey J.F. Colella, Shehroz S. Khan</li>
+                <li>Accepted to the International Joint Conference on Artificial Intelligence (IJCAI) ARIAL Workshop (2025)</li>
+                <li>Paper: <a href="https://arxiv.org/abs/2505.18412v1" style="text-decoration: underline;">[ArXiv]</a> <a href="https://link.springer.com/chapter/10.1007/978-981-95-0568-5_5" style="text-decoration: underline;">[Springer Nature]</a></li>
+                <li>Code: <a href="https://github.com/jessicaxtang/ExerciseLLM" style="text-decoration: underline;">[GitHub]</a></li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Deep Reinforcement Learning Controller for Indoor Farming</h4>
+              <p>International Student Conference on Artificial Intelligence (2021)</p>
+              <ul>
+                <li>Author: <i>Jessica Tang</i></li>
+                <li>Accepted to the International Student Conference on Artificial Intelligence (STCAI), Nanyang Technological University (2021)</li>
+                <li><strong>Best Presenter Award</strong></li>
+                <li>Presented adaptive indoor farming controller using deep reinforcement learning</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Modular Can-Sized Satellite System with Active Attitude Control</h4>
+              <p>European Space Agency CanSat Competition (2022)</p>
+              <ul>
+                <li>Authors: T. Cai, K. Howard, B. Zhou, <i>J. Tang</i>, V. He, D. Liu</li>
+                <li>European Space Agency, International CanSat Competition (2022)</li>
+                <li><strong>Outstanding Paper Award</strong></li>
+                <li>Exploration of modular CanSat system design with active attitude control</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Does Mass Media Enable Genocide?</h4>
+              <p>Harvard College Undergraduate Research Association (2020)</p>
+              <ul>
+                <li>Author: <i>Jessica Tang</i></li>
+                <li>Harvard College Undergraduate Research Association (2020)</li>
+                <li>Explores how mass media can fuel violence using the Rwandan Genocide as case study</li>
+                <li>Examines role of propaganda and media in enabling atrocities</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Spatio-temporal Multimodal Wildfire Spread Prediction</h4>
+              <p>ECE324 Final Project (2025)</p>
+              <ul>
+                <li>Authors: <i>Jessica Tang</i>, Hibah Hussain, Natasha Yang (equal contribution)</li>
+                <li>ECE324 Final Project 2025</li>
+                <li>Developed FireNet, a vision transformer-based model for wildfire spread prediction</li>
+                <li>Code: <a href="https://github.com/Natasha-Yang/FireNet" style="text-decoration: underline;">[GitHub]</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: Technical Projects -->
+      <div class="project-card" onclick="toggleCard(this)">
+        <div class="project-card__image">
+          <img src="files/projects.gif" alt="Projects" onerror="this.src='files/placeholder.png'">
+        </div>
+        <div class="project-card__content">
+          <h3>Technical Projects <i class="fas fa-chevron-down toggle-icon"></i></h3>
+          <p class="project-card__summary">Engineering work including CanSat, autonomous vehicles, and AI systems</p>
+          <div class="project-card__details">
+            <div class="detail-section">
+              <h4>FireNet: Wildfire Spread Prediction</h4>
+              <p>Vision Transformer for Environmental Monitoring</p>
+              <ul>
+                <li>Developed FireNet, a vision transformer-based model for wildfire spread prediction</li>
+                <li>Uses satellite imagery and meteorological data for accurate predictions</li>
+                <li>Outperforms traditional CNNs in accuracy and efficiency</li>
+                <li>Technologies: PyTorch, Vision Transformers, Computer Vision</li>
+                <li>Code: <a href="https://github.com/Natasha-Yang/FireNet" style="text-decoration: underline;">[GitHub]</a></li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Exercise Quality Assessment with LLMs</h4>
+              <p>AI-Powered Rehabilitation System</p>
+              <ul>
+                <li>Designed exercise-specific feature extraction from skeletal joint data</li>
+                <li>Developed prompt engineering methods for personalized feedback</li>
+                <li>Published at IJCAI 2025 ARIAL Workshop</li>
+                <li>Technologies: Large Language Models, Computer Vision, Prompt Engineering</li>
+                <li>Code: <a href="https://github.com/jessicaxtang/ExerciseLLM" style="text-decoration: underline;">[GitHub]</a></li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>CanSat Satellite System</h4>
+              <p>Modular Design with Active Attitude Control</p>
+              <ul>
+                <li>Designed and built a can-sized satellite for ESA competition</li>
+                <li>Implemented active attitude control for stability during descent</li>
+                <li>Won National CanSat Challenge and ESA International Finalist</li>
+                <li>Outstanding Paper Award for technical documentation</li>
+                <li>Technologies: Embedded Systems, Sensors, Control Systems</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>aUToronto Mapping Software</h4>
+              <p>Autonomous Vehicle Navigation</p>
+              <ul>
+                <li>Developed mapping and localization software for self-driving cars</li>
+                <li>Contributed to UofT's autonomous vehicle team</li>
+                <li>Worked with ROS, sensor fusion, and path planning algorithms</li>
+                <li>Technologies: ROS, Python, Computer Vision, SLAM</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Deep RL for Indoor Farming</h4>
+              <p>Adaptive Agricultural Controller</p>
+              <ul>
+                <li>Created deep reinforcement learning controller for optimizing crop growth</li>
+                <li>Provides individualized plant treatment and adaptive control</li>
+                <li>Presented at International Student Conference on AI (Best Presenter)</li>
+                <li>Technologies: Deep Reinforcement Learning, Python, IoT Sensors</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4>Hackathon Projects</h4>
+              <p>Various Competition Wins</p>
+              <ul>
+                <li>NSBE Hackathon: Best Project Overall, Best Cohere Project (2023)</li>
+                <li>Toronto Health Datathon: First Place Winner (2023)</li>
+                <li>Built AI-powered health solutions and NLP applications</li>
+                <li>Technologies: Machine Learning, NLP, Data Science</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <p class="website__rights">© jess 2025.</p>
+          <div class="social__icons">
+            <a href="mailto:jessicao.tang@mail.utoronto.ca" class="social__icon--link">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="social__icon--link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=IEvZRL8AAAAJ&hl=en&oi=sra" class="social__icon--link">
+              <i class="fab fa-google-scholar"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      // Card toggle functionality
+      function toggleCard(card) {
+        const isExpanded = card.classList.contains('expanded');
+        
+        // Close all other cards
+        document.querySelectorAll('.project-card').forEach(c => {
+          c.classList.remove('expanded');
+          const icon = c.querySelector('.toggle-icon');
+          if (icon) icon.style.transform = 'rotate(0deg)';
+        });
+        
+        // Toggle current card
+        if (!isExpanded) {
+          card.classList.add('expanded');
+          const icon = card.querySelector('.toggle-icon');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      }
+      
+      // Theme toggle functionality
+      function toggleTheme() {
+        const body = document.body;
+        const themeIcon = document.getElementById('theme-icon');
+        
+        body.classList.toggle('light-mode');
+        
+        if (body.classList.contains('light-mode')) {
+          themeIcon.classList.remove('fa-moon');
+          themeIcon.classList.add('fa-sun');
+          localStorage.setItem('theme', 'light');
+        } else {
+          themeIcon.classList.remove('fa-sun');
+          themeIcon.classList.add('fa-moon');
+          localStorage.setItem('theme', 'dark');
+        }
+      }
+      
+      document.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme');
+        const themeIcon = document.getElementById('theme-icon');
+        
+        if (savedTheme === 'light') {
+          document.body.classList.add('light-mode');
+          themeIcon.classList.remove('fa-moon');
+          themeIcon.classList.add('fa-sun');
+        }
+      });
+    </script>
+</body>
+</html>

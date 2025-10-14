@@ -24,6 +24,11 @@
 <div class="cursor-dot-outline"></div>
 <div class="cursor-dot"></div>
 <body class="research-page">
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+    
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
@@ -38,17 +43,14 @@
                 <a href="/index.html" class="button">about</a>
               </li>
               <li class="navbar__btn">
-                <a href="/index.html#portfolio" class="button">portfolio</a>
+                <a href="/research.html" class="button">research</a>
               </li>
               <li class="navbar__btn">
-                <a href="/academics.html" class="button">academics</a>
+                <a href="/portfolio.html" class="button">portfolio</a>
               </li>
-              <li class="navbar__btn">
-                <a href="/construction.html" class="button">research</a>
-              </li>
-              <li class="navbar__btn">
+              <!-- <li class="navbar__btn">
                 <a href="files/JessicaTang_CV.pdf" class="button" target="_blank" id="CV">CV</a>
-              </li>
+              </li> -->
             </ul>
         </div>
     </nav>
@@ -164,5 +166,34 @@
     </div>
 
     <script src="app.js"></script>
+    <script>
+      function toggleTheme() {
+        const body = document.body;
+        const themeIcon = document.getElementById('theme-icon');
+        
+        body.classList.toggle('light-mode');
+        
+        if (body.classList.contains('light-mode')) {
+          themeIcon.classList.remove('fa-moon');
+          themeIcon.classList.add('fa-sun');
+          localStorage.setItem('theme', 'light');
+        } else {
+          themeIcon.classList.remove('fa-sun');
+          themeIcon.classList.add('fa-moon');
+          localStorage.setItem('theme', 'dark');
+        }
+      }
+      
+      document.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme');
+        const themeIcon = document.getElementById('theme-icon');
+        
+        if (savedTheme === 'light') {
+          document.body.classList.add('light-mode');
+          themeIcon.classList.remove('fa-moon');
+          themeIcon.classList.add('fa-sun');
+        }
+      });
+    </script>
 </body>
 </html>
