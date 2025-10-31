@@ -1,378 +1,340 @@
-<!--Shortcuts
-a.navbar__links#home-page + tab creates an a tag, class, ID automatically
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VYYLP2HSK"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VYYLP2HSK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1VYYLP2HSK');
+  </script>
 
-      gtag('config', 'G-1VYYLP2HSK');
-    </script>
-
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica Tang</title>
-    <link rel="stylesheet" href="about.css">
-    <script src="https://kit.fontawesome.com/accfa05b72.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="/jt.ico">
-
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Unbounded:wght@200..900&family=Kalnia:wght@100..700&family=Quicksand:wght@300..700&family=Vollkorn+SC:wght@400;600;700;900&family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Zeyada&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jessica Tang</title>
+  <meta name="description" content="Jessica Tang &mdash; researcher, musician, and founder exploring interpretable AI systems and interdisciplinary collaboration.">
+  <meta property="og:title" content="Jessica Tang">
+  <meta property="og:description" content="Researcher, musician, and founder exploring interpretable AI systems and collaborative storytelling.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jessicaxtang.github.io/">
+  <link rel="icon" href="/jt.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="music.js" defer></script>
 </head>
-<div class="cursor-dot-outline"></div>
-<div class="cursor-dot"></div>
-<body>
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-        <i class="fas fa-moon" id="theme-icon"></i>
-    </button>
-    
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" id="navbar__logo">JT</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-
-            <ul class="navbar__menu">
-              <li class="navbar__btn">
-                <a href="/index.html" class="button">about</a>
-              </li>
-              <li class="navbar__btn">
-                <a href="/research.html" class="button">research</a>
-              </li>
-              <li class="navbar__btn">
-                <a href="/portfolio.html" class="button">portfolio</a>
-              </li>
-              <!-- <li class="navbar__btn">
-                  <a href="files/JessicaTang_CV.pdf" class="button" target="_blank" id="CV">CV</a>
-              </li> -->
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <!-- <div class="hero" id="home">
-        <div class="name__dot"></div>
-        <div class="hero__container">
-            <h1 class="hero__heading">HEY, I'M JESS</h1>
-            <p class="hero__description">
-                <a href="/academics.html">researcher</a>, musician, and <a href="#ILLUMINAITE">founder</a>
-        </div>
-    </div> -->
-
-    <!-- About Section -->
-    <div class="main" id="about">
-        <div class="main__container">
-        <div class="main__text">
-            <h1 class="main__heading">jessica tang</h1>
-            <p class="main__description">
-
-            Hi, I'm Jessica. I'm deeply interested in researching and developing interpretable and aligned AI systems to help society.
-            I'm currently interning at <a class="glow" href="https://www.microsoft.com/en-us/research/about-microsoft-research/">microsoft research</a>
-            and am studying <a class="glow" href="/academics.html">machine intelligence</a> at the <a href="https://www.utoronto.ca/">University of Toronto</a>.
-            <br><br>
-            I am also the founder and president of <a class="glow" href="https://www.illuminaite.org/">illuminAI</a>, creatively blending art and computer science to make AI safety, ethics, and research engaging for students and the general public</a>.
-
-            <br><br>
-            <a href="mailto:jessicao.tang@mail.utoronto.ca" style="text-decoration: underline;">Email</a> / <a href="https://www.linkedin.com/in/jessica-tang-532982194/" style="text-decoration: underline;">LinkedIn</a> / <a href="https://scholar.google.com/citations?user=IEvZRL8AAAAJ&hl=en&oi=sra" style="text-decoration: underline;">Google Scholar</a>
-            </p>
-        </div>
-        <div class="main__img">
-            <img src="files/headshot.png" alt="Headshot Image">
-        </div>
-        </div>
-  </div>
-
-  <!-- highlights Section -->
-  <div class="highlights" id="highlights">
-    <!-- project Cards Section -->
-    <div class="project-cards__container">
-      
-      <!-- INTERPRETABILITY -->
-      <div class="project-card" onclick="toggleCard(this)">
-        <div class="project-card__image">
-          <img src="files/tokengeist.gif" alt="LLM Interpretability" onerror="this.src='files/placeholder.png'">
-        </div>
-        <div class="project-card__content">
-          <h3>LLM Interpretability<i class="fas fa-chevron-down toggle-icon"></i></h3>
-          <p class="project-card__summary">figuring out what goes on inside large language models</p>
-          <div class="project-card__details">
-            <div class="detail-section">
-              <p>Microsoft Research</p>
-              <ul>
-                <li>Interpretability in multi-agent LLM systems</li>
-                <li>Developing methods to understand and explain AI agent behavior</li>
-                <li>Generating traces of influential decisions</li>
-              </ul>
-            </div>
-            <div class="detail-section">
-              <p>Vector Research Institute</p>
-              <ul>
-                <li>Online attribution and conflict detection in LLMs</li>
-                <li>Conflict resolution strategies for AI agents</li>
-              </ul>
-            </div>            
-          </div>
-        </div>
-      </div>
-
-      <!-- illuminAI -->
-      <div class="project-card" onclick="toggleCard(this)">
-        <div class="project-card__image">
-          <img src="files/illuminAI.gif" alt="illuminAI" onerror="this.src='files/placeholder.png'">
-        </div>
-        <div class="project-card__content">
-          <h3>AI Ethics<i class="fas fa-chevron-down toggle-icon"></i></h3>
-          <p class="project-card__summary">Self-led initiative focused on interdisciplinary collaboration for AI ethics</p>
-          <div class="project-card__details">
-            <div class="detail-section">
-              <p>illuminAI (Founder, President)</p>
-              <ul>
-                <li>Reached 1,000+ participants across 11 countries.</li>
-                <li>Directed 16 interdisciplinary workshops and events with speakers from Zoom, IBM, MIT, and UofT.</li>
-                <li>Organized the UofT AI Ethics Hackathon, engaging 15+ disciplines across technical and non-technical fields.</li>
-                <li>Secured $3,000+ in funding from AI4ALL, UofT, NCWIT, SAP, and Perplexity AI.</li>
-                <li>Visit: <a href="https://illuminaite.github.io/" style="text-decoration: underline;">illuminaite.github.io</a></li>
-              </ul>
-            </div>
-            <div class="detail-section">
-              <p>Wave Learning Festival</p>
-              <ul>
-                <li>Designed and taught 'Introduction to Artificial Intelligence' to 70+ students, covering neural networks and AI ethics.</li>
-              </ul>
-            </div>  
-          </div>
-        </div>
-      </div>
-
-      <!-- KITE -->
-      <div class="project-card" onclick="toggleCard(this)">
-        <div class="project-card__image">
-          <img src="files/KITE.gif" alt="Projects" onerror="this.src='files/placeholder.png'">
-        </div>
-        <div class="project-card__content">
-          <h3>LLMs for Exercise Rehabilitation<i class="fas fa-chevron-down toggle-icon"></i></h3>
-          <p class="project-card__summary">Exercise Feedback Generation</p>
-          <div class="project-card__details">
-            <div class="detail-section">
-              <p>KITE Research Institute</p>
-              <ul>
-                <li>Published paper at IJCAI 2025 ARIAL Workshop</li>
-                <li>Developing AI systems for rehabilitation exercise assessment and feedback using large language models</li>
-                <li>Designed exercise-specific feature extraction from skeletal joint data</li>
-                <li>Paper: <a href="https://link.springer.com/chapter/10.1007/978-981-95-0568-5_5" style="text-decoration: underline;">[Springer Nature]</a>
-                  | Code: <a href="https://github.com/jessicaxtang/ExerciseLLM" style="text-decoration: underline;">[GitHub]</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Computational Neuroscience -->
-      <div class="project-card" onclick="toggleCard(this)">
-        <div class="project-card__image">
-          <img src="files/optitrack.gif" alt="Computational Neuroscience" onerror="this.src='files/placeholder.png'">
-        </div>
-        <div class="project-card__content">
-          <h3>Computational Neuroscience<i class="fas fa-chevron-down toggle-icon"></i></h3>
-          <p class="project-card__summary">Analysis of neural data for understanding brain function</p>
-          <div class="project-card__details">
-            <div class="detail-section">
-              <p>Cognitive Neuroscience and Sensorimotor Integration Lab</p>
-              <ul>
-                <li>Managing lab operations and coordinating research projects</li>
-                <li>Computational neuroscience research on sensorimotor learning</li>
-                <li>Data analysis and experimental design</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TRAIL -->
-      <div class="project-card" onclick="toggleCard(this)">
-        <div class="project-card__image">
-          <img src="files/trail.gif" alt="Autonomous Vehicles" onerror="this.src='files/placeholder.png'">
-        </div>
-        <div class="project-card__content">
-          <h3>Autonomous Vehicles<i class="fas fa-chevron-down toggle-icon"></i></h3>
-          <p class="project-card__summary">Toronto Robotics and AI Lab</p>
-          <div class="project-card__details">
-            <div class="detail-section">
-              <p>Toronto Robotics and AI Lab</p>
-              <ul>
-                <li>Research in robotics perception and planning</li>
-                <li>Working on autonomous systems and machine learning applications</li>
-              </ul>
-            </div>
-            <div class="detail-section">
-              <p>aUToronto Mapping</p>
-              <ul>
-                <li>Developed mapping and localization software for self-driving cars</li>
-                <li>Contributed to UofT's autonomous vehicle team</li>
-                <li>Optimized a Python conversion pipeline of a 100,000+ node DMP map to a fully connected HD map.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ESA CanSat -->
-      <div class="project-card" onclick="toggleCard(this)">
-        <div class="project-card__image">
-          <img src="files/ESA_cansat.gif" alt="CanSat" onerror="this.src='files/placeholder.png'">
-        </div>
-        <div class="project-card__content">
-          <h3>Can-Sized Satellite <i class="fas fa-chevron-down toggle-icon"></i></h3>
-          <p class="project-card__summary">Modular Design with Active Attitude Control</p>
-          <div class="project-card__details">
-            <div class="detail-section">
-              <p>CanSat Satellite System</p>
-              <ul>
-                <li>Designed and built a can-sized satellite for ESA competition</li>
-                <li>Implemented active attitude control for stability during descent</li>
-                <li>Won National CanSat Challenge and ESA International Finalist</li>
-                <li>Outstanding Paper Award for technical documentation</li>
-                <li>Technologies: Embedded Systems, Sensors, Control Systems</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Producing -->
-      <div class="project-card" onclick="toggleCard(this)">
-        <div class="project-card__image">
-          <img src="files/producing.gif" alt="Producing Music" onerror="this.src='files/placeholder.png'">
-        </div>
-        <div class="project-card__content">
-          <h3>Music Production<i class="fas fa-chevron-down toggle-icon"></i></h3>
-          <p class="project-card__summary">songwriting & production</p>
-          <div class="project-card__details">
-            <div class="detail-section">
-              <p>updating soon...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Performing -->
-      <div class="project-card" onclick="toggleCard(this)">
-        <div class="project-card__image">
-          <img src="files/singing.gif" alt="Singing" onerror="this.src='files/placeholder.png'">
-        </div>
-        <div class="project-card__content">
-          <h3>Music Performance<i class="fas fa-chevron-down toggle-icon"></i></h3>
-          <p class="project-card__summary">singing, violin & piano</p>
-          <div class="project-card__details">
-            <div class="detail-section">
-              <p>Royal Conservatory of Canada</p>
-              <ul>
-                <li>Associate Diploma (ARCT) in Violin, Performer (2022)</li>
-                <li>Associate Diploma (ARCT) in Piano, Performer (2021)</li>
-                <li>Regional Gold Medal in Level 6 Violin (2016)</li>
-                <li>Highest level of achievement in classical music performance</li>
-              </ul>
-            </div>
-            <div class="detail-section">
-              <p>recordings</p>
-              <ul>
-                <li><a href="https://youtu.be/kR8qsUPareM?list=RDkR8qsUPareM" target="_blank">Vienna (engsci talent show)</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
+<body class="music-page home-page">
+  <header class="music-header">
+    <div class="music-shell music-header__inner">
+      <a class="music-logo" href="/index.html">JT</a>
+      <nav class="music-nav" aria-label="Primary">
+        <ul class="music-nav__list">
+          <li class="music-nav__item">
+            <a href="/index.html" class="button nav-link" data-nav="about" aria-current="page">about</a>
+          </li>
+          <li class="music-nav__item">
+            <a href="#research-list-title" class="button nav-link" data-nav="research">research</a>
+          </li>
+          <li class="music-nav__item">
+            <a href="#home-showcase" class="button nav-link" data-nav="showcase">showcase</a>
+          </li>
+          <li class="music-nav__item">
+            <a href="/portfolio.html" class="button nav-link" data-nav="portfolio">portfolio</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <!-- Footer Section -->
-  <div class="footer__container">
-    <section class="social__media">
-      <div class="social__media--wrap">
-        <p class="website__rights">© jess 2025.</p>
-        <div class="social__icons">
-          <a href="mailto:jessicao.tang@mail.utoronto.ca" class="social__icon--link">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="social__icon--link">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://scholar.google.com/citations?user=IEvZRL8AAAAJ&hl=en&oi=sra" class="social__icon--link">
-            <i class="fab fa-google-scholar"></i>
-          </a>
+  <main class="music-main">
+    <section class="music-hero home-hero" aria-labelledby="home-hero-title">
+      <div class="music-shell">
+        <div class="home-hero__grid">
+          <div class="home-hero__headline">
+            <p class="music-eyebrow">profile</p>
+            <h1 class="home-hero__title" id="home-hero-title">jessica tang</h1>
+            <p class="home-hero__deck">AI Alignment, Interpretability, Ethics.</p>
+          </div>
+          <figure class="home-hero__media" aria-hidden="true">
+            <img src="files/headshot.png" alt="" loading="lazy" decoding="async">
+          </figure>
+          <div class="home-hero__summary">
+            <p>▹ I'm deeply interested in researching and developing interpretable and aligned AI systems to help society.</p>
+            <p>▹ I'm studying <a href=https://engsci.utoronto.ca/program/majors/machine-intelligence/>Machine Intelligence in Engineering Science</a> at the University of Toronto, working with <a href=https://www.cs.toronto.edu/~sheila/>Sheila McIlraith </a>and <a href=https://silviupitis.com/>Silviu Pitis</a> at Vector Institute.</p>
+            <p>▹ Previously I interned at Microsoft Research leading a project on multi-agent interpretability and influence tracing, with <a href=https://www.microsoft.com/en-us/research/people/sagarwal/>Sharad Agarwal</a> and <a href=https://www.microsoft.com/en-us/research/people/sbarke/>Shraddha Barke</a>.</p>
+            <p>▹ I founded <a href=https://illuminAI.github.io>illuminAI</a>, a boundless community to creatively blend computer science and arts, increasing public engagement of AI ethics and societal impacts. We host <a href="https://www.uoftcoexistence.ca/">ethics hackathons</a>, make <a href="https://www.youtube.com/@illuminAIacademy/featured">videos</a> and publish articles.</p>
+            <p>▹ Outside of research, I <a href=music.html>sing, perform, and write songs!</a></p>
+            <div class="home-hero__cta">
+              <a href="mailto:jessicao.tang@mail.utoronto.ca" class="home-hero__link">email</a>
+              <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="home-hero__link">linkedin</a>
+              <a href="https://scholar.google.com/citations?user=IEvZRL8AAAAJ&amp;hl=en&amp;oi=sra" class="home-hero__link">google scholar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-marquee" aria-hidden="true">
+        <div class="home-marquee__track">
+          <span>ethics</span>
+          <span>interpretability</span>
+          <span>alignment</span>
+          <span>safety</span>
+          <span>piano, violin, singing</span>
+          <span>songwriting and producing</span>
+          <span>ethics</span>
+          <span>interpretability</span>
+          <span>alignment</span>
+          <span>safety</span>
+          <span>piano, violin, singing</span>
+          <span>songwriting and producing</span>
+          <span>ethics</span>
+          <span>interpretability</span>
+          <span>alignment</span>
         </div>
       </div>
     </section>
-  </div>
 
-  <script src="app.js"></script>
-  <script>
-    // Card toggle functionality
-    function toggleCard(card) {
-      const isExpanded = card.classList.contains('expanded');
-      
-      // Close all other cards
-      document.querySelectorAll('.project-card').forEach(c => {
-        c.classList.remove('expanded');
-        const icon = c.querySelector('.toggle-icon');
-        if (icon) icon.style.transform = 'rotate(0deg)';
-      });
-      
-      // Toggle current card
-      if (!isExpanded) {
-        card.classList.add('expanded');
-        const icon = card.querySelector('.toggle-icon');
-        if (icon) icon.style.transform = 'rotate(180deg)';
-      }
-    }
-    
-    // Theme toggle functionality
-    function toggleTheme() {
-      const body = document.body;
-      const themeIcon = document.getElementById('theme-icon');
-      
-      body.classList.toggle('light-mode');
-      
-      // Update icon
-      if (body.classList.contains('light-mode')) {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-        localStorage.setItem('theme', 'light');
-      } else {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-        localStorage.setItem('theme', 'dark');
-      }
-    }
-    
-    // Load saved theme on page load
-    document.addEventListener('DOMContentLoaded', () => {
-      const savedTheme = localStorage.getItem('theme');
-      const themeIcon = document.getElementById('theme-icon');
-      
-      if (savedTheme === 'light') {
-        document.body.classList.add('light-mode');
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-      }
-    });
-  </script>
-    
+
+    <section class="music-section music-tracklist" aria-labelledby="research-list-title">
+      <div class="music-shell">
+        <div class="music-tracklist__header">
+          <h2 class="music-section__title" id="research-list-title">Research Library</h2>
+          <p class="music-section__lede">Select projects spanning interpretability, human-AI collaboration, and embodied intelligence. Click to expand notes.</p>
+        </div>
+        <ul class="music-tracklist__list research-list">
+          <li class="music-tracklist__item">
+            <details class="research-details" open>
+              <summary class="research-summary">
+                <span class="music-tracklist__index">01</span>
+                <span class="music-tracklist__title">AI interpretability &amp; alignment</span>
+                <span class="music-tracklist__meta">Microsoft Research <br> Vector Institute</span>
+              </summary>
+              <div class="research-body">
+                <p>Multi-layered attribution work probing how collaborative language agents negotiate goals, resist jailbreaks, and surface conflict signals in real time.</p>
+                <ul>
+                  <li>Multi-agent influence tracing in multi-agent LLM systems at Microsoft Research.</li>
+                  <li>Jailbreak detection and ethical alignment via attribution at Vector Institute.</li>
+                  <li>Online attribution for conflict detection and mitigation.</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="music-tracklist__item">
+            <details class="research-details" open>
+              <summary class="research-summary">
+                <span class="music-tracklist__index">02</span>
+                <span class="music-tracklist__title">applied machine learning</span>
+                <span class="music-tracklist__meta">KITE Research Institute <br> Cognitive Neuroscience <br> Reinforcement Learning</span>
+              </summary>
+              <div class="research-body">
+                <p>Experiments moving advanced modelling into embodied domains—from rehabilitation labs to wildfire monitoring and precision farming.</p>
+                <ul>
+                  <li>
+                    <strong><a href="https://link.springer.com/chapter/10.1007/978-981-95-0568-5_5">Rehabilitation Exercise Quality Assessment and Feedback Generation Using Large Language Models with Prompt Engineering.</a></strong>
+                    <br>
+                    <b>Jessica Tang</b>, Ali Abedi, Tracey JF Colella, Shehroz Khan. ARIAL workshop at IJCAI 2025. [<a href="https://github.com/jessicaxtang/ExerciseLLM">Code</a>]
+                    <br>
+                    We designed exercise-specific feature extraction methods to distill key movement quality indicators from skeletal joint data. Combined with carefully optimized prompts, these features enable large language models to both assess exercise quality and give personalized, actionable feedback, highlighting their potential to make virtual rehabilitation more accurate, adaptive, and patient-friendly.
+                  </li>
+                  <li>
+                    <strong><a href="https://drive.google.com/file/d/1kq_iyErmLNjDzbWW6WGQn5jfUq07U43w/view?usp=sharing">Spatio-temporal Multimodal Wildfire Spread Prediction: Exploring Vision Transformers and Lightweight Models.</a></strong>
+                    <br>
+                    <b>Jessica Tang</b>, Hibah Hussain, Natasha Yang (equal contribution). ECE324 Final Project 2025.
+                    <br>
+                    We developed FireNet, a vision transformer-based model that predicts wildfire spread using satellite imagery and meteorological data. Our model outperforms traditional CNNs in accuracy and efficiency, demonstrating the potential of transformers in environmental monitoring applications.
+                  </li>
+                  <li>
+                    <strong><a href="https://drive.google.com/file/d/1FPkRe2ZUUNaz4FTn50CPAxvT7aE6cUGH/view?usp=drive_link">Deep Reinforcement Learning Controller for Indoor Farming.</a></strong>
+                    <br>
+                    <b>Jessica Tang</b>. International Student Conference on Artificial Intelligence 2021. <b>🪷 Best presenter award.</b>
+                    <br>
+                    This paper presents an adaptive indoor farming controller powered by deep reinforcement learning (DRL) to optimize crop growth and resource use. Unlike traditional generalized methods, the system provides individualized plant treatment and can adapt quickly to changing environmental conditions.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="music-tracklist__item">
+            <details class="research-details" open>
+              <summary class="research-summary">
+                <span class="music-tracklist__index">02</span>
+                <span class="music-tracklist__title">ethics, philosophy, and media</span>
+                <span class="music-tracklist__meta">illuminAI <br> Philosophy</span>
+              </summary>
+              <div class="research-body">
+                <p>Writing and analysis that interrogate agency, responsibility, and the social framing of emerging technologies.</p>
+                <ul>
+                  <li>
+                    <strong><a href="https://drive.google.com/file/d/1NKyVyVyK-38wsZF5JTtwDn7EXa-q4JpJ/view?usp=sharing">Disputations on Compatibilism and the No Choice Principle.</a></strong>
+                    <br>
+                    <b>Jessica Tang</b>. PHL244 Human Nature, 2024.
+                    <br>
+                    An exploration of Van Inwagen's "No Choice Principle" and the debate over compatibilism, examining whether free will can coexist with determinism and presenting objections that challenge his incompatibilist conclusion.
+                  </li>
+                  <li>
+                    <strong>Does Mass Media Enable Genocide?</strong>
+                    <br>
+                    <b>Jessica Tang</b>. Harvard College Undergraduate Research Association, 2020.
+                    <br>
+                    This piece explores how mass media can fuel violence, using the Rwandan Genocide as an example. It shows how radio propaganda encouraged conformity and escalated conflict, revealing the powerful role media can play in enabling atrocities.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="music-tracklist__item">
+            <details class="research-details" open>
+              <summary class="research-summary">
+                <span class="music-tracklist__index">05</span>
+                <span class="music-tracklist__title">engineering systems</span>
+                <span class="music-tracklist__meta">Signal Processing <br> European Space Agency</span>
+              </summary>
+              <div class="research-body">
+                <p>Hands-on engineering studies spanning audio intelligence and modular aerospace platforms.</p>
+                <ul>
+                  <li>
+                    <strong><a href="https://drive.google.com/file/d/1RyMbA0Q-H4aZbAg7s69bxxuTz7W1Os_m/view?usp=sharing">What's Your Groove? Beat Tracking in Music Signal Processing.</a></strong>
+                    <br> <b>Jessica Tang</b>. ECE355 Independent Study Module, 2024.
+                    <br>
+                    This paper examines beat tracking in music, focusing on tempo and beat detection using Music Information Retrieval (MIR) techniques. It highlights how musical features like pitch, intensity, and timbre map to signal representations and emphasizes energy-based beat detection using the short-time Fourier transform (STFT). Advanced beat tracking methods and their applications in the music industry are also discussed.
+                  </li>
+                  <li>
+                    <strong><a href="https://esamultimedia.esa.int/docs/edu/TeamZephyr_FinalReport.pdf">Modular Can-Sized Satellite System with Active Attitude Control.</a></strong>
+                    <br> T. Cai, K. Howard, B. Zhou, <b>J. Tang</b>, V. He, D. Liu. European Space Agency, International CanSat Competition, 2022. <b>🪷 Outstanding Paper Award.</b> [<a href="https://www.esa.int/Education/CanSat/Looking_back_on_CanSat_2022_and_forward_to_2023">ESA Article</a>]
+                    <br>
+                    An exploration of the design and implementation of a modular CanSat system, focusing on active attitude control mechanisms to enhance stability and performance during descent.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="home-showcase" aria-labelledby="home-showcase">
+      <header class="home-showcase__header music-shell">
+        <h2 class="home-showcase__title" id="home-showcase">Showcase</h2>
+        <p class="home-showcase__lede">A rotating glimpse into current labs, collectives, and stages.</p>
+      </header>
+      <div class="home-showcase__track">
+        <article class="home-showcase__item reveal-on-scroll">
+          <figure class="home-showcase__media" data-rotate="5200">
+            <img src="files/tokengeist.gif" class="home-showcase__image is-active" alt="Animated visualization of token embeddings shifting in space." loading="lazy" decoding="async">
+            <img src="files/MSR Cohort Pic.jpeg" class="home-showcase__image" alt="Microsoft Research Undergrad 2025 Cohort." loading="lazy" decoding="async">
+            <img src="files/MSR_Dingtaifung.JPG" class="home-showcase__image" alt="Dingtaifung MSR 2025." loading="lazy" decoding="async">
+          </figure>
+          <div class="home-showcase__caption">
+            <p class="home-showcase__eyebrow">Microsoft Research</p>
+            <h3 class="home-showcase__heading">Influence Attribution in LLMs</h3>
+            <p class="home-showcase__copy">Tracing in agentic LLM systems to pinpoint influence and responsibility.</p>
+          </div>
+        </article>
+
+        <article class="home-showcase__item reveal-on-scroll">
+          <figure class="home-showcase__media">
+            <img src="files/illuminAI.gif" class="home-showcase__image is-active" alt="illuminAI workshop montage with collaborative sketching." loading="lazy" decoding="async">
+          </figure>
+          <div class="home-showcase__caption">
+            <p class="home-showcase__eyebrow">illuminAI 2025</p>
+            <h3 class="home-showcase__heading">UofT AI Ethics Hackathon</h3>
+            <p class="home-showcase__copy">Hosted 180 students across Ontario to develop ethical AI systems <a href="https://www.uoftcoexistence.ca/">Website</a>.</p>
+          </div>
+        </article>
+
+        <article class="home-showcase__item reveal-on-scroll">
+          <figure class="home-showcase__media">
+            <img src="files/RBC_scholarship.jpg" class="home-showcase__image is-active" alt="RBC Award for Diversity and Innovation in Technology." loading="lazy" decoding="async">
+          </figure>
+          <div class="home-showcase__caption">
+            <p class="home-showcase__eyebrow">RBC scholarship</p>
+            <h3 class="home-showcase__heading">Winner of Scholarship for Diversity and Innovation in Technology</h3>
+            <p class="home-showcase__copy">One of top 5 undergrad students selected <a href="https://www.utoronto.ca/celebrates/5-undergraduate-students-receive-2024-rbc-awards-diversity-and-innovation-technology">Read More</a> .</p>
+          </div>
+        </article>
+
+        <article class="home-showcase__item reveal-on-scroll">
+          <figure class="home-showcase__media" data-rotate="2000">
+            <img src="files/KITE.gif" class="home-showcase__image is-active" alt="Clinician and patient working with rehabilitation sensors." loading="lazy" decoding="async">
+            <img src="files/jessica-ali.jpg" class="home-showcase__image" alt="Jessica and Ali at KITE Research Institute." loading="lazy" decoding="async">
+            <!-- <img src="files/SpringerPubLanding.png" class="home-showcase__image" alt="Landing page of Springer Nature publication for Exercise LLM." loading="lazy" decoding="async"> -->
+            <img src="files/ExerciseLLM_poster.png" class="home-showcase__image" alt="Diagram of Exercise LLM system architecture." loading="lazy" decoding="async">
+          </figure>
+          <div class="home-showcase__caption">
+            <p class="home-showcase__eyebrow">KITE Research Institute</p>
+            <h3 class="home-showcase__heading">Motion to Language</h3>
+            <p class="home-showcase__copy">Personalized Feedback using LLMs with pose features for virtual exercises rehabilitation.</p>
+          </div>
+        </article>
+
+        <article class="home-showcase__item reveal-on-scroll">
+          <figure class="home-showcase__media">
+            <img src="files/trail.gif" class="home-showcase__image is-active" alt="Automatic lane detection for Autonomous Vehicles." loading="lazy" decoding="async">
+          </figure>
+          <div class="home-showcase__caption">
+            <p class="home-showcase__eyebrow">Toronto Robotics and AI Lab, aUToronto</p>
+            <h3 class="home-showcase__heading">Lane Detection Research for Autonomous Vehicles</h3>
+            <p class="home-showcase__copy">Developing algorithms for real-time lane detection and tracking.</p>
+          </div>
+        </article>
+
+        <article class="home-showcase__item reveal-on-scroll">
+          <figure class="home-showcase__media" data-rotate="3000">
+            <img src="files/singing.gif" class="home-showcase__image is-active" alt="Live performance at Nocturne 2025." loading="lazy" decoding="async">
+            <img src="files/nocturne_BJT.jpg" class="home-showcase__image" alt="Jess, Ben & Tyler at Nocturne 2024." loading="lazy" decoding="async">
+          </figure>
+          <div class="home-showcase__caption">
+            <p class="home-showcase__eyebrow">music & performance</p>
+            <h3 class="home-showcase__heading">Music</h3>
+            <p class="home-showcase__copy">Piano, violin, singing, production, composition!</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+
+    <section class="music-section music-credits" aria-labelledby="home-credits-title">
+      <div class="music-shell">
+        <div class="music-credits__header">
+          <h2 class="music-section__title" id="home-credits-title">Collaborations &amp; Features</h2>
+          <p class="music-section__lede">Partners, studios, and publications shaping the work.</p>
+        </div>
+        <div class="music-credits__grid">
+          <div class="music-credits__item">
+            <span class="music-credits__label">research</span>
+            <p class="music-credits__value">Microsoft Research · Vector Institute</p>
+          </div>
+          <div class="music-credits__item">
+            <span class="music-credits__label">community</span>
+            <p class="music-credits__value">illuminAI · Wave Learning Festival</p>
+          </div>
+          <div class="music-credits__item">
+            <span class="music-credits__label">press</span>
+            <p class="music-credits__value">Globe &amp; Mail · Springer Nature</p>
+          </div>
+          <div class="music-credits__item">
+            <span class="music-credits__label">stage</span>
+            <p class="music-credits__value">Royal Conservatory of Music</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="music-footer">
+    <div class="music-shell music-footer__inner">
+      <p class="music-footer__note">© jess 2025.</p>
+      <div class="music-footer__links">
+        <a href="mailto:jessicao.tang@mail.utoronto.ca" class="music-footer__link">email</a>
+        <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="music-footer__link">linkedin</a>
+        <a href="https://scholar.google.com/citations?user=IEvZRL8AAAAJ&amp;hl=en&amp;oi=sra" class="music-footer__link">google scholar</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
