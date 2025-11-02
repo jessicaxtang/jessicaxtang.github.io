@@ -40,13 +40,16 @@
             </div>
             <ul class="navbar__menu">
               <li class="navbar__btn">
-                <a href="/index.html" class="button">about</a>
+                <a href="/index.html" class="button nav-link" data-nav="about">about</a>
               </li>
               <li class="navbar__btn">
-                <a href="/highlights.html" class="button">highlights</a>
+                <a href="/highlights.html" class="button nav-link" data-nav="highlights" aria-current="page">highlights</a>
               </li>
               <li class="navbar__btn">
-                <a href="/research.html" class="button">research</a>
+                <a href="/research.html" class="button nav-link" data-nav="research">research</a>
+              </li>
+              <li class="navbar__btn">
+                <a href="/music.html" class="button nav-link" data-nav="music">music</a>
               </li>
             </ul>
         </div>
@@ -71,7 +74,7 @@
       <!-- Card 1: Education & Research -->
       <div class="project-card" onclick="toggleCard(this)">
         <div class="project-card__image">
-          <img src="files/tokengeist.gif" alt="LLM Interpretability" onerror="this.src='files/placeholder.png'">
+          <img src="files/tokengeist.gif" alt="LLM Interpretability" onerror="this.onerror=null; this.src='files/headshot.png';">
         </div>
         <div class="project-card__content">
           <h3>LLM Interpretability<i class="fas fa-chevron-down toggle-icon"></i></h3>
@@ -137,7 +140,7 @@
       <!-- Card 2: Leadership & Fellowships -->
       <div class="project-card" onclick="toggleCard(this)">
         <div class="project-card__image">
-          <img src="files/esa_cansat.gif" alt="Leadership & Fellowships" onerror="this.src='files/placeholder.png'">
+          <img src="files/RBC_scholarship.jpg" alt="Leadership & Fellowships" onerror="this.onerror=null; this.src='files/headshot.png';">
         </div>
         <div class="project-card__content">
           <h3>Leadership & Fellowships <i class="fas fa-chevron-down toggle-icon"></i></h3>
@@ -200,7 +203,7 @@
       <!-- Card 3: Awards & Honours -->
       <div class="project-card" onclick="toggleCard(this)">
         <div class="project-card__image">
-          <img src="files/optitrack.gif" alt="Awards & Honours" onerror="this.src='files/placeholder.png'">
+          <img src="files/optitrack.gif" alt="Awards & Honours" onerror="this.onerror=null; this.src='files/headshot.png';">
         </div>
         <div class="project-card__content">
           <h3>Awards & Honours <i class="fas fa-chevron-down toggle-icon"></i></h3>
@@ -255,7 +258,7 @@
       <!-- Card 4: ESA CanSat -->
       <div class="project-card" onclick="toggleCard(this)">
         <div class="project-card__image">
-          <img src="files/esa_cansat.gif" alt="Music" onerror="this.src='files/placeholder.png'">
+          <img src="files/singing.gif" alt="Music" onerror="this.onerror=null; this.src='files/headshot.png';">
         </div>
         <div class="project-card__content">
           <h3>Music <i class="fas fa-chevron-down toggle-icon"></i></h3>
@@ -305,7 +308,7 @@
       <!-- Card 5: Publications -->
       <div class="project-card" onclick="toggleCard(this)">
         <div class="project-card__image">
-          <img src="files/publications.gif" alt="Publications" onerror="this.src='files/placeholder.png'">
+          <img src="files/KITE.gif" alt="Publications" onerror="this.onerror=null; this.src='files/headshot.png';">
         </div>
         <div class="project-card__content">
           <h3>Publications <i class="fas fa-chevron-down toggle-icon"></i></h3>
@@ -368,7 +371,7 @@
       <!-- Card 6: Technical Projects -->
       <div class="project-card" onclick="toggleCard(this)">
         <div class="project-card__image">
-          <img src="files/projects.gif" alt="Projects" onerror="this.src='files/placeholder.png'">
+          <img src="files/producing.gif" alt="Projects" onerror="this.onerror=null; this.src='files/headshot.png';">
         </div>
         <div class="project-card__content">
           <h3>Technical Projects <i class="fas fa-chevron-down toggle-icon"></i></h3>
