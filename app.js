@@ -11,33 +11,6 @@ if (menu && menuLinks) {
 
     menu.addEventListener('click', mobileMenu);
 
-    // Show active menu when scrolling
-    const highlightMenu = () => {
-        const elem = document.querySelector('.highlight');
-        const homeMenu = document.querySelector('#home-page');
-        const aboutMenu = document.querySelector('#about-page');
-        const portfolioMenu = document.querySelector('#portfolio-page');
-        let scrollPos = window.scrollY;
-        console.log(scrollPos);
-
-        if (!portfolioMenu) {
-            return;
-        }
-
-        // adds 'highlight' class to navbar menu items with scroll
-        if (window.innerWidth > 960 && scrollPos > 375) {
-            portfolioMenu.classList.add('highlight');
-            return;
-        }
-
-        if ((elem && window.innerWidth < 960 && scrollPos < 400) || elem) {
-            elem.classList.remove('highlight');
-        }
-    };
-
-    window.addEventListener('scroll', highlightMenu);
-    window.addEventListener('click', highlightMenu);
-
     // Close mobile menu when clicking on a menu item
     const hideMobileMenu = () => {
         const menuBars = document.querySelector('.is-active');
@@ -52,15 +25,6 @@ if (menu && menuLinks) {
         navLogo.addEventListener('click', hideMobileMenu);
     }
 }
-
-// Duplicate marquee content to create a seamless loop
-document.querySelectorAll('.home-marquee__track').forEach((track) => {
-    if (track.dataset.duplicated === 'true') {
-        return;
-    }
-    track.innerHTML += track.innerHTML;
-    track.dataset.duplicated = 'true';
-});
 
 // CUSTOM DOT CURSOR 
 // source: Kyle Brumm (https://codepen.io/kjbrum/pen/qooQJJ)
@@ -84,22 +48,7 @@ var cursor = {
         this.animateDotOutline();
     },
     
-//     updateCursor: function(e) {
-//         var self = this;
-        
-//         console.log(e)
-        
-//         // Show the cursor
-//         self.cursorVisible = true;
-//         self.toggleCursorVisibility();
 
-//         // Position the dot
-//         self.endX = e.pageX;
-//         self.endY = e.pageY;
-//         self.$dot.style.top = self.endY + 'px';
-//         self.$dot.style.left = self.endX + 'px';
-//     },
-    
     setupEventListeners: function() {
         var self = this;
         
