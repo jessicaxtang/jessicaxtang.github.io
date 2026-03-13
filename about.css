@@ -251,7 +251,7 @@ body.project-page a:focus-visible {
 }
 
 /* Updated sitewide navbar styling */
-.music-header {
+.site-header {
     background: var(--bg-primary);
     border-bottom: 1px solid var(--border-color);
     position: sticky;
@@ -259,13 +259,13 @@ body.project-page a:focus-visible {
     z-index: 100;
 }
 
-.music-shell {
+.site-shell {
     width: min(100%, 1200px);
     margin: 0 auto;
     padding-inline: clamp(20px, 5vw, 50px);
 }
 
-.music-header__inner {
+.site-header__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -273,7 +273,7 @@ body.project-page a:focus-visible {
     padding-block: 24px;
 }
 
-.music-logo {
+.site-logo {
     font-family: var(--font-serif);
     font-size: clamp(1.4rem, 3vw, 1.8rem);
     letter-spacing: 0.22em;
@@ -282,7 +282,7 @@ body.project-page a:focus-visible {
     text-decoration: none;
 }
 
-.music-nav__list {
+.site-nav__list {
     list-style: none;
     display: flex;
     align-items: center;
@@ -291,22 +291,22 @@ body.project-page a:focus-visible {
     padding: 0;
 }
 
-.music-nav__item {
+.site-nav__item {
     display: flex;
 }
 
-.music-header .nav-link {
+.site-header .nav-link {
     padding-bottom: 6px;
 }
 
 @media (max-width: 720px) {
-    .music-header__inner {
+    .site-header__inner {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
     }
 
-    .music-nav__list {
+    .site-nav__list {
         flex-wrap: wrap;
         gap: 12px 24px;
     }
