@@ -50,4 +50,93 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  const cursorDot = document.querySelector('.cursor-dot');
+  const cursorOutline = document.querySelector('.cursor-dot-outline');
+
+  if (cursorDot && cursorOutline) {
+    const cursorState = {
+      delay: 7,
+      x: window.innerWidth / 2,
+      y: window.innerHeight / 2,
+      endX: window.innerWidth / 2,
+      endY: window.innerHeight / 2,
+      visible: true,
+      enlarged: false,
+    };
+
+    const toggleCursorVisibility = () => {
+      if (cursorState.visible) {
+        cursorDot.style.opacity = '1';
+        cursorOutline.style.opacity = '0.5';
+      } else {
+        cursorDot.style.opacity = '0';
+        cursorOutline.style.opacity = '0';
+      }
+    };
+
+    const toggleCursorSize = () => {
+      if (cursorState.enlarged) {
+        cursorDot.style.transform = 'translate(-50%, -50%) scale(0.75)';
+        cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+      } else {
+        cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
+        cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
+      }
+    };
+
+    const animateCursorOutline = () => {
+      cursorState.x += (cursorState.endX - cursorState.x) / cursorState.delay;
+      cursorState.y += (cursorState.endY - cursorState.y) / cursorState.delay;
+      cursorOutline.style.top = `${cursorState.y}px`;
+      cursorOutline.style.left = `${cursorState.x}px`;
+      window.requestAnimationFrame(animateCursorOutline);
+    };
+
+    document.querySelectorAll('a').forEach((anchor) => {
+      anchor.addEventListener('mouseover', () => {
+        cursorState.enlarged = true;
+        toggleCursorSize();
+      });
+      anchor.addEventListener('mouseout', () => {
+        cursorState.enlarged = false;
+        toggleCursorSize();
+      });
+    });
+
+    document.addEventListener('mousedown', () => {
+      cursorState.enlarged = true;
+      toggleCursorSize();
+    });
+
+    document.addEventListener('mouseup', () => {
+      cursorState.enlarged = false;
+      toggleCursorSize();
+    });
+
+    document.addEventListener('mousemove', (event) => {
+      cursorState.visible = true;
+      toggleCursorVisibility();
+      cursorState.endX = event.pageX;
+      cursorState.endY = event.pageY;
+      cursorDot.style.top = `${cursorState.endY}px`;
+      cursorDot.style.left = `${cursorState.endX}px`;
+    });
+
+    document.addEventListener('mouseenter', () => {
+      cursorState.visible = true;
+      toggleCursorVisibility();
+      cursorDot.style.opacity = '1';
+      cursorOutline.style.opacity = '1';
+    });
+
+    document.addEventListener('mouseleave', () => {
+      cursorState.visible = true;
+      toggleCursorVisibility();
+      cursorDot.style.opacity = '0';
+      cursorOutline.style.opacity = '0';
+    });
+
+    animateCursorOutline();
+  }
+
 });
