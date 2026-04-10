@@ -94,12 +94,16 @@
 }
 
 .home-page,
-.home-page * {
+.home-page *,
+.writing-page,
+.writing-page * {
     cursor: none;
 }
 
 .home-page .cursor-dot,
-.home-page .cursor-dot-outline {
+.home-page .cursor-dot-outline,
+.writing-page .cursor-dot,
+.writing-page .cursor-dot-outline {
     background-color: #6a0000;
 }
 
@@ -902,4 +906,292 @@
 .home-showcase .detail-section ul li a:hover,
 .home-showcase .detail-section ul li a:focus-visible {
     color: var(--showcase-accent);
+}
+
+
+/* ─── WRITING INDEX ─────────────────────────────────────────── */
+
+.writing-index-hero {
+    padding-block: 104px 72px;
+    border-bottom: 1px solid var(--rule);
+}
+
+.writing-index-hero__title {
+    font-family: var(--font-serif);
+    font-size: 6rem;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+    margin-bottom: 20px;
+}
+
+.writing-index-hero__lede {
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 480px;
+}
+
+.writing-list {
+    padding-block: 56px 104px;
+}
+
+.writing-list__empty {
+    color: var(--muted);
+    font-size: 0.95rem;
+    padding: 40px 0;
+}
+
+.writing-entry {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    column-gap: 40px;
+    align-items: baseline;
+    padding-block: 28px;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.15s ease;
+}
+
+.writing-entry:first-child {
+    border-top: 1px solid var(--rule);
+}
+
+.writing-entry:hover .writing-entry__title,
+.writing-entry:focus-visible .writing-entry__title {
+    color: var(--accent);
+}
+
+.writing-entry:focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.writing-entry__date {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-transform: uppercase;
+    padding-top: 4px;
+}
+
+.writing-entry__body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.writing-entry__title {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+    line-height: 1.2;
+    transition: color 0.15s ease;
+}
+
+.writing-entry__lede {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.55;
+    max-width: 560px;
+}
+
+.writing-entry__tag {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .writing-index-hero__title {
+        font-size: 4.5rem;
+    }
+
+    .writing-entry__title {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .writing-entry {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .writing-index-hero__title {
+        font-size: 3rem;
+    }
+
+    .writing-entry__title {
+        font-size: 1.6rem;
+    }
+
+    .writing-entry__lede {
+        font-size: 0.95rem;
+    }
+
+    .writing-entry__tag {
+        font-size: 0.72rem;
+    }
+}
+
+
+/* ─── WRITING POST ───────────────────────────────────────────── */
+
+.writing-post {
+    padding-block: 80px 120px;
+}
+
+.writing-post__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 56px;
+    transition: color 0.15s ease;
+}
+
+.writing-post__back:hover,
+.writing-post__back:focus-visible {
+    color: var(--accent);
+}
+
+.writing-post__header {
+    max-width: 720px;
+    margin-bottom: 56px;
+}
+
+.writing-post__tag {
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.writing-post__title {
+    font-family: var(--font-serif);
+    font-size: 3.6rem;
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+    margin-bottom: 20px;
+}
+
+.writing-post__meta {
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.writing-post__rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin-bottom: 56px;
+    max-width: 720px;
+}
+
+.writing-post__prose {
+    max-width: 680px;
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    line-height: 1.75;
+    color: var(--fg);
+}
+
+.writing-post__prose p {
+    margin-bottom: 1.6em;
+}
+
+.writing-post__prose p:last-child {
+    margin-bottom: 0;
+}
+
+.writing-post__prose h2 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin: 2.4em 0 0.8em;
+}
+
+.writing-post__prose h3 {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 2em 0 0.6em;
+}
+
+.writing-post__prose a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--rule);
+    transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.writing-post__prose a:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+}
+
+.writing-post__prose blockquote {
+    border-left: 2px solid var(--accent);
+    padding-left: 24px;
+    margin: 2em 0;
+    color: var(--muted);
+    font-style: italic;
+}
+
+.writing-post__prose ul,
+.writing-post__prose ol {
+    padding-left: 1.4em;
+    margin-bottom: 1.6em;
+}
+
+.writing-post__prose li {
+    margin-bottom: 0.4em;
+}
+
+.writing-post__prose code {
+    font-family: "SF Mono", "Fira Code", monospace;
+    font-size: 0.88em;
+    background: #f5f5f5;
+    padding: 0.15em 0.35em;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .writing-post__title {
+        font-size: 2.6rem;
+    }
+
+    .writing-post__prose {
+        font-size: 1.15rem;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 540px) {
+    .writing-post__title {
+        font-size: 2rem;
+    }
+
+    .writing-post__prose {
+        font-size: 1.1rem;
+    }
+
+    .writing-post__back {
+        margin-bottom: 36px;
+    }
+
+    .writing-post__header {
+        margin-bottom: 36px;
+    }
 }
