@@ -7,10 +7,8 @@ description: Understanding the signal processing behind rhythm — tying math to
 pdf: https://drive.google.com/file/d/1RyMbA0Q-H4aZbAg7s69bxxuTz7W1Os_m/view?usp=sharing
 ---
 
-Write your preface here. Delete this paragraph and the prompts below when you're ready.
+Wrote this for ECE355, Signal Analysis & Digital Systems. I had this big curiosity about connections between music and engineering. Music has consumed my entire life, *way* before I even started thinking about studying engineering. This "independent study module" presented itself as the perfect opportunity to explore an intersection between the two.
 
-Why did you choose this topic for an independent study? What's the connection between you as a musician and you as an engineer — what made you want to close that gap technically?
+I ask: What does beat tracking actually mean, why is it a harder problem than it sounds (for a computer)?
 
-What does beat tracking actually mean, and why is it a harder problem than it sounds? A drummer's timing feels different from a metronome at the same BPM — why?
-
-What surprised you while writing it? What would you do differently now?
+Primarily based on Müller's textbook, *Fundamentals of Music Processing: Audio, Analysis, Algorithms, Applications, First Edition* published in 2015.
