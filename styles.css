@@ -360,7 +360,9 @@
     font-size: 0.7rem;
 }
 
-.home-hero__link {
+.home-hero a,
+.home-hero a:link,
+.home-hero a:visited {
     position: relative;
     padding-bottom: 4px;
     /* text-decoration: none; */
