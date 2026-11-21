@@ -15,6 +15,7 @@
   --rose: #ff9191;
   --rose-deep: #a8453f;
   --green: #62b052;
+  --blue: #99daff;
 
   --font-display: "Playfair Display SC", "Playfair Display", Georgia, serif;
   --font-body: "Crimson Pro", Georgia, "Times New Roman", serif;
@@ -389,6 +390,11 @@ a:focus-visible,
 
 .award {
   color: var(--green);
+  white-space: nowrap;
+}
+
+.venue {
+  color: var(--blue);
   white-space: nowrap;
 }
 
