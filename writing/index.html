@@ -11,89 +11,91 @@
   </script>
 
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Writing — Jessica Tang</title>
-  <meta name="description" content="Essays, notes, and miscellaneous writing.">
+  <meta name="description" content="Papers and writing by Jessica Tang on AI safety, philosophy, neuroscience, and health.">
   <meta property="og:title" content="Writing — Jessica Tang">
-  <meta property="og:description" content="Essays, notes, and miscellaneous writing.">
+  <meta property="og:description" content="Papers and writing by Jessica Tang on AI safety, philosophy, neuroscience, and health.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jessicaxtang.github.io/writing/">
   <link rel="icon" href="/jt.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
-  <script src="../site.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..700;1,300..700&amp;family=Playfair+Display+SC:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
 </head>
-<body class="site-page writing-page">
+<body class="theme-writing">
   <div class="cursor-dot-outline"></div>
   <div class="cursor-dot"></div>
-  <header class="site-header">
-    <div class="site-shell site-header__inner">
-      <a class="site-logo" href="/index.html">JT</a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a href="/index.html" class="button nav-link" data-nav="about">about</a></li>
-          <li class="site-nav__item"><a href="/index.html#research-list-title" class="button nav-link" data-nav="research">research</a></li>
-          <li class="site-nav__item"><a href="/writing/" class="button nav-link" data-nav="writing" aria-current="page">writing</a></li>
-          <li class="site-nav__item"><a href="/index.html#home-music-showcase" class="button nav-link" data-nav="music">music</a></li>
-          <li class="site-nav__item"><a href="/docs/JessicaTang_CV.pdf" class="button nav-link" data-nav="cv" target="_blank" rel="noopener">cv</a></li>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="masthead">
+    <div class="shell masthead__inner">
+      <a class="masthead__name" href="/">Jessica Tang</a>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="/">about</a></li>
+          <li><a href="/writing/" aria-current="page">writing</a></li>
+          <li><a href="/talks/">talks</a></li>
+          <li><a href="/music/">music</a></li>
+          <li><a href="/docs/JessicaTang_CV.pdf" target="_blank" rel="noopener">cv</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="site-main">
-    <section class="writing-index-hero" aria-labelledby="writing-hero-title">
-      <div class="site-shell">
-        <h1 class="writing-index-hero__title" id="writing-hero-title">Writing</h1>
-        <p class="writing-index-hero__lede">Essays, notes, and miscellaneous pieces.</p>
-      </div>
-    </section>
+  <main class="main" id="main">
+    <h1 class="visually-hidden">Writing</h1>
 
-    <section class="writing-list" aria-label="Posts">
-      <div class="site-shell">
+    <div class="shell section">
+      <section class="pub-group" aria-labelledby="ai-safety">
+        <h2 class="section-title" id="ai-safety">AI Safety</h2>
 
-        <a class="writing-entry" href="https://thelumens.substack.com/p/on-the-importance-of-origins" target="_blank" rel="noopener">
-          <span class="writing-entry__date">Apr 2026</span>
-          <span class="writing-entry__body">
-            <span class="writing-entry__tag">Interpretability</span>
-            <span class="writing-entry__title">On the Importance of Origins</span>
-            <span class="writing-entry__lede">A piece about provenance, interpretability, and AI auditing.</span>
-          </span>
-        </a>
+        <div class="indent">
+          <article class="pub">
+            <h3 class="pub__title"><a href="https://arxiv.org/abs/2607.22610" target="_blank" rel="noopener">Tokengeist: Multi-Turn Attribution Tracing in Agentic Conversations.</a></h3>
+            <p class="pub__meta"><span class="me">Jessica Tang</span>, Shraddha Barke, Sharad Agarwal. 2026.</p>
+          </article>
 
-        <a class="writing-entry" href="https://drive.google.com/file/d/1RyMbA0Q-H4aZbAg7s69bxxuTz7W1Os_m/view?usp=sharing" target="_blank" rel="noopener">
-          <span class="writing-entry__date">Dec 2024</span>
-          <span class="writing-entry__body">
-            <span class="writing-entry__tag">Music Information Retrieval</span>
-            <span class="writing-entry__title">What's Your Groove? Beat Tracking in Music Signal Processing</span>
-            <span class="writing-entry__lede">Understanding the signal processing behind rhythm — tying math to music.</span>
-          </span>
-        </a>
+          <article class="pub">
+            <h3 class="pub__title"><a href="https://neurips.cc/" target="_blank" rel="noopener">Runtime Verification of Multiple Natural Language Criteria for Agent Governance.</a></h3>
+            <p class="pub__meta">Silviu Pitis, Parand Alamdari, <span class="me">Jessica Tang</span>, Toryn Kalssen, Sheila McIlraith. NeurIPS 2026.</p>
+          </article>
 
-        <a class="writing-entry" href="https://drive.google.com/file/d/1NKyVyVyK-38wsZF5JTtwDn7EXa-q4JpJ/view?usp=sharing" target="_blank" rel="noopener">
-          <span class="writing-entry__date">Apr 2024</span>
-          <span class="writing-entry__body">
-            <span class="writing-entry__tag">philosophy</span>
-            <span class="writing-entry__title">Disputations on Compatibilism and the No Choice Principle</span>
-            <span class="writing-entry__lede">My philosophy paper examining Van Inwagen's No Choice Principle and why compatibilism remains defensible.</span>
-          </span>
-        </a>
-      </div>
-    </section>
-  </main>
+          <article class="pub">
+            <h3 class="pub__title"><a href="https://ceur-ws.org/Vol-4189/paper6.pdf" target="_blank" rel="noopener">Optimizing a Margin of Safety via Prompt Repair for Large Language Models.</a></h3>
+            <p class="pub__meta"><span class="me">Jessica Tang</span>, Silviu Pitis, Sheila McIlraith. Machine Ethics workshop at AAAI 2026.</p>
+          </article>
+        </div>
+      </section>
 
-  <footer class="site-footer">
-    <div class="site-shell site-footer__inner">
-      <p class="site-footer__note">© jess 2026.</p>
-      <div class="site-footer__links">
-        <a href="mailto:jessicao.tang@mail.utoronto.ca" class="site-footer__link">email</a>
-        <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="site-footer__link">linkedin</a>
-        <a href="https://scholar.google.com/citations?user=IEvZRL8AAAAJ&hl=en&oi=sra" class="site-footer__link">google scholar</a>
-      </div>
+      <section class="pub-group" aria-labelledby="other-work">
+        <h2 class="section-title" id="other-work">Philosophy, Neuroscience, Health&hellip;</h2>
+
+        <div class="indent">
+          <article class="pub">
+            <h3 class="pub__title"><a href="https://link.springer.com/chapter/10.1007/978-981-95-0568-5_5" target="_blank" rel="noopener">Rehabilitation Exercise Quality Assessment and Feedback Generation Using Large Language Models.</a></h3>
+            <p class="pub__meta"><span class="me">Jessica Tang</span>, Ali Abedi, Tracey JF Colella, Shehroz Khan. ARIAL workshop at IJCAI 2025.</p>
+          </article>
+
+          <article class="pub">
+            <h3 class="pub__title"><a href="https://www.biorxiv.org/content/10.1101/2025.11.16.688720v2.abstract" target="_blank" rel="noopener">From Tasks to Topology: Dorsal and Ventral Streams Emerge in Optimized Neural Networks.</a></h3>
+            <p class="pub__meta">Tahsin Reza, Ewan Jordan, Steven Luo, Kirtan Patel, <span class="me">Jessica Tang</span>, Matthias Niemeier. 2025.</p>
+          </article>
+
+          <article class="pub">
+            <h3 class="pub__title"><a href="https://drive.google.com/file/d/1NKyVyVyK-38wsZF5JTtwDn7EXa-q4JpJ/view?usp=sharing" target="_blank" rel="noopener">Disputations on Compatibilism and the No Choice Principle</a></h3>
+            <p class="pub__meta"><span class="me">Jessica Tang</span>. PHL244 Human Nature. 2024.</p>
+          </article>
+
+          <article class="pub">
+            <h3 class="pub__title"><a href="https://drive.google.com/file/d/1FPkRe2ZUUNaz4FTn50CPAxvT7aE6cUGH/view?usp=drive_link" target="_blank" rel="noopener">Deep Reinforcement Learning Controller for Indoor Farming.</a> <span class="award">🪷 Best presenter award.</span></h3>
+            <p class="pub__meta"><span class="me">Jessica Tang</span>. International Student Conference on Artificial Intelligence 2021.</p>
+          </article>
+        </div>
+      </section>
     </div>
-  </footer>
+  </main>
 </body>
 </html>

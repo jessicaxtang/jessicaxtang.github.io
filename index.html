@@ -11,319 +11,123 @@
   </script>
 
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jessica Tang</title>
-  <meta name="description" content="Jessica Tang &mdash; researcher, musician, and founder exploring interpretable AI systems and interdisciplinary collaboration.">
+  <meta name="description" content="Jessica Tang &mdash; computer science PhD student at Brown University working on the behaviour of and oversight mechanisms for agentic systems.">
   <meta property="og:title" content="Jessica Tang">
-  <meta property="og:description" content="Researcher, musician, and founder exploring interpretable AI systems and collaborative storytelling.">
+  <meta property="og:description" content="Computer science PhD student at Brown University working on the behaviour of and oversight mechanisms for agentic systems.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jessicaxtang.github.io/">
   <link rel="icon" href="/jt.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="site.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..700;1,300..700&amp;family=Playfair+Display+SC:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
 </head>
-<body class="site-page home-page">
+<body class="theme-about">
   <div class="cursor-dot-outline"></div>
   <div class="cursor-dot"></div>
-  
-  <header class="site-header">
-    <div class="site-shell site-header__inner">
-      <a class="site-logo" href="/index.html">JT</a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a href="/index.html" class="button nav-link" data-nav="about" aria-current="page">about</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="/index.html#research-list-title" class="button nav-link" data-nav="research">research</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="/writing/" class="button nav-link" data-nav="writing">writing</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="/index.html#home-music-showcase" class="button nav-link" data-nav="music">music</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="/docs/JessicaTang_CV.pdf" class="button nav-link" data-nav="cv" target="_blank" rel="noopener">cv</a>
-          </li>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="masthead">
+    <div class="shell masthead__inner">
+      <a class="masthead__name" href="/">Jessica Tang</a>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="/" aria-current="page">about</a></li>
+          <li><a href="/writing/">writing</a></li>
+          <li><a href="/talks/">talks</a></li>
+          <li><a href="/music/">music</a></li>
+          <li><a href="/docs/JessicaTang_CV.pdf" target="_blank" rel="noopener">cv</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="site-main">
-    <section class="site-hero home-hero" aria-labelledby="home-hero-title">
-      <div class="site-shell">
-        <div class="home-hero__grid">
-          <div class="home-hero__headline">
-            <!-- <p class="site-eyebrow">profile</p> -->
-            <h1 class="home-hero__title" id="home-hero-title">Jessica Tang</h1>
-            <!-- <p class="home-hero__deck">AI Alignment, Interpretability, Ethics.</p> -->
+  <main class="main" id="main">
+    <h1 class="visually-hidden">Jessica Tang</h1>
+
+    <section class="shell hero" aria-label="Introduction">
+      <div class="portrait">
+        <img class="portrait__a" src="/media/chalkboard-1.jpg" alt="Jessica Tang at a chalkboard, turning towards the camera beside a hand-drawn diagram." fetchpriority="high" decoding="async">
+        <img class="portrait__b" src="/media/chalkboard-2.jpg" alt="Jessica Tang facing the chalkboard, working through the same diagram." loading="lazy" decoding="async">
+
+        <div class="contact">
+          <a href="mailto:jessica_tang1@brown.edu">jessica_tang1@brown.edu</a>
+          <a href="https://www.linkedin.com/in/jessica-tang-532982194/" target="_blank" rel="noopener">linkedin</a>
+          <a href="https://scholar.google.com/citations?user=IEvZRL8AAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener">google scholar</a>
+        </div>
+      </div>
+
+      <div class="bio">
+        <p>I'm a computer science PhD student at Brown University, advised by <a href="https://slbooth.com/" target="_blank" rel="noopener">Serena Booth</a>. I am interested in understanding the behaviour of and designing oversight mechanisms for agentic systems.</p>
+        <p>I received my BASc in Engineering Science from the University of Toronto, advised by <a href="https://www.cs.toronto.edu/~sheila/" target="_blank" rel="noopener">Sheila McIlraith</a> and <a href="https://silviupitis.com/" target="_blank" rel="noopener">Silviu Pitis</a>.</p>
+        <p>Also, I founded <a href="https://thelumens.github.io" target="_blank" rel="noopener">The Lumens</a>, write <a href="https://thelumens.github.io/blogs/" target="_blank" rel="noopener">articles</a> and <a href="/talks/">interviews</a> at the intersection of AI ethics, safety, and philosophy.</p>
+        <p>Outside of research, I <a href="/music/">perform and write music</a>.</p>
+      </div>
+    </section>
+
+    <section class="shell section" aria-labelledby="highlights-title">
+      <h2 class="section-title" id="highlights-title">Highlights</h2>
+
+      <div class="highlights">
+        <article class="card">
+          <img class="card__media" src="/media/brown.gif" alt="Standing in front of the Van Wickle Gates at Brown University." loading="lazy" decoding="async">
+          <div class="card__body">
+            <h3 class="card__title">Started my PhD in Computer Science!</h3>
+            <p class="card__org">Brown University</p>
+            <p class="card__note">Advised by Prof. Serena Booth in the <a href="https://giraffe.cs.brown.edu/" target="_blank" rel="noopener">GIRAFFE lab</a>.</p>
           </div>
-          <figure class="home-hero__media" aria-hidden="true">
-            <img src="media/headshot.png" alt="" loading="lazy" decoding="async">
-          </figure>
-          <div class="home-hero__summary">
-            <div class="home-hero__cta">
-              <a href="mailto:jessica_tang1@brown.edu" class="home-hero__link">email</a>
-              <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="home-hero__link">linkedin</a>
-              <a href="https://scholar.google.com/citations?user=IEvZRL8AAAAJ&amp;hl=en&amp;oi=sra" class="home-hero__link">google scholar</a>
-            </div>
-            <p>I'm a PhD student at Brown University, advised by <a href="https://slbooth.com/" target="_blank" rel="noopener noreferrer">Serena Booth</a>. I develop methods that support technical AI governance, including interpretability, verification, and oversight for agentic systems.</p>
-            <p>Previously, I recieved my BASc in Engineering Science from the University of Toronto, advised by <a href="https://www.cs.toronto.edu/~sheila/" target="_blank" rel="noopener noreferrer">Prof. Sheila McIlraith</a> and <a href="https://silviupitis.com/" target="_blank" rel="noopener noreferrer">Silviu Pitis</a>.</p>
-            <p>Also, I founded <a href="https://thelumens.github.io">The Lumens</a>, write <a href="https://thelumens.github.io/blogs/">articles</a> and <a href="https://www.youtube.com/@the-lumens">interviews</a> at the intersection of AI ethics, safety, and society.</p>
-            <p>Outside of research, I <a href="/index.html#home-music-showcase">perform and write music</a>!</p>
+        </article>
+
+        <article class="card">
+          <img class="card__media" src="/media/msr_uri.gif" alt="Interns at Microsoft Research." loading="lazy" decoding="async">
+          <div class="card__body">
+            <h3 class="card__title">Microsoft Research Internship</h3>
+            <p class="card__org">Microsoft Research</p>
+            <p class="card__note">One of top 20 undergrad students selected.</p>
+            <p class="card__note">Led a project on multi-turn agentic attribution: <a href="https://www.microsoft.com/en-us/research/publication/tokengeist-multi-turn-attribution-tracing-in-agentic-conversations/" target="_blank" rel="noopener">Tokengeist</a>.</p>
           </div>
-        </div>
+        </article>
+
+        <article class="card">
+          <img class="card__media" src="/media/illuminAI.gif" alt="Scenes from the illuminAI AI ethics hackathon." loading="lazy" decoding="async">
+          <div class="card__body">
+            <h3 class="card__title"><a href="https://youtu.be/ZBoA7ihBOdw" target="_blank" rel="noopener">UofT AI Ethics Hackathon 2025</a></h3>
+            <p class="card__org">illuminAI</p>
+            <p class="card__note">Hosted 180 students across Ontario to develop ethical AI systems.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__media" src="/media/RBC_scholarship.jpg" alt="Scholarship recipients holding their certificates." loading="lazy" decoding="async">
+          <div class="card__body">
+            <h3 class="card__title"><a href="https://www.utoronto.ca/celebrates/5-undergraduate-students-receive-2024-rbc-awards-diversity-and-innovation-technology" target="_blank" rel="noopener">Winner of Scholarship for Diversity and Innovation in Technology</a></h3>
+            <p class="card__org">Royal Bank of Canada</p>
+            <p class="card__note">One of top 5 undergrad students selected.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__media" src="/media/trail.gif" alt="Road footage with automatic lane detection overlaid." loading="lazy" decoding="async">
+          <div class="card__body">
+            <h3 class="card__title">Lane Detection Research for Autonomous Vehicles</h3>
+            <p class="card__org">Toronto Robotics and AI Lab, aUToronto</p>
+            <p class="card__note">Developing algorithms for real-time lane detection and tracking.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__media" src="/media/ESA_cansat.gif" alt="Satellite ground track from the ESA CanSat competition." loading="lazy" decoding="async">
+          <div class="card__body">
+            <h3 class="card__title"><a href="https://www.esa.int/Education/CanSat/Looking_back_on_CanSat_2022_and_forward_to_2023" target="_blank" rel="noopener">International ESA CanSat Competition 2022</a></h3>
+            <p class="card__org">Canadian Space Agency, European Space Agency</p>
+            <p class="card__note"><a href="https://esamultimedia.esa.int/docs/edu/TeamZephyr_FinalReport.pdf" target="_blank" rel="noopener">Modular Can-Sized Satellite System with Active Attitude Control.</a> <span class="award">🪷 Outstanding Paper Award.</span></p>
+          </div>
+        </article>
       </div>
     </section>
-
-
-    <section class="site-section research-section" aria-labelledby="research-list-title">
-      <div class="site-shell">
-        <div class="site-tracklist__header">
-          <h2 class="site-section__title" id="research-list-title">Research</h2>
-          <p class="site-section__lede">Research projects archive.</p>
-        </div>
-        <div class="research-list">
-          <article class="research-item">
-            <h3 class="research-item__title">Large Language Models</h3>
-            <ul class="research-item__list">
-              <li>
-                <strong><a href="https://arxiv.org/abs/2607.22610" target="_blank" rel="noopener noreferrer">Tokengeist: Multi-Turn Attribution Tracing in Agentic Conversations.</a></strong>
-                <p class="research-meta"><b>Jessica Tang</b>, Shraddha Barke, Sharad Agarwal. 2026.</p>
-              </li>
-              <li>
-                <strong><a href="https://neurips.cc/" target="_blank" rel="noopener noreferrer">Runtime Verification of Multiple Natural Language Criteria for Agent Governance.</a></strong>
-                <p class="research-meta">Silviu Pitis, Parand Alamdari, <b>Jessica Tang</b>, Toryn Kalssen, Sheila McIlraith. NeurIPS 2026.</p>
-              </li>
-              <li>
-                <strong><a href="https://ceur-ws.org/Vol-4189/paper6.pdf" target="_blank" rel="noopener noreferrer">Optimizing a Margin of Safety via Prompt Repair for Large Language Models.</a></strong>
-                <p class="research-meta"><b>Jessica Tang</b>, Silviu Pitis, Sheila McIlraith. Machine Ethics workshop at AAAI 2026.</p>
-              </li>
-              <li>
-                <strong><a href="https://link.springer.com/chapter/10.1007/978-981-95-0568-5_5" target="_blank" rel="noopener noreferrer">Rehabilitation Exercise Quality Assessment and Feedback Generation Using Large Language Models with Prompt Engineering.</a> [<a href="https://github.com/jessicaxtang/ExerciseLLM" target="_blank" rel="noopener noreferrer">Code</a>]</strong>
-                <p class="research-meta"><b>Jessica Tang</b>, Ali Abedi, Tracey JF Colella, Shehroz Khan. ARIAL workshop at IJCAI 2025.</p>
-              </li>
-            </ul>
-          </article>
-          <article class="research-item">
-            <h3 class="research-item__title">Other</h3>
-            <ul class="research-item__list">
-              <li>
-                <strong><a href="https://www.biorxiv.org/content/10.1101/2025.11.16.688720v2.abstract" target="_blank" rel="noopener noreferrer">From Tasks to Topology: Dorsal and Ventral Streams Emerge in Optimized Neural Networks.</a></strong>
-                <p class="research-meta">Tahsin Reza, Ewan Jordan, Steven Luo, Kirtan Patel, <b>Jessica Tang</b>, Matthias Niemeier. 2025.</p>
-              </li>
-              <li>
-                <strong><a href="https://drive.google.com/file/d/1FPkRe2ZUUNaz4FTn50CPAxvT7aE6cUGH/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Deep Reinforcement Learning Controller for Indoor Farming.</a> <b>🪷 Best presenter award.</b></strong>
-                <p class="research-meta"><b>Jessica Tang</b>. International Student Conference on Artificial Intelligence 2021.</p>
-              </li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="home-showcase" aria-labelledby="home-showcase">
-      <header class="home-showcase__header site-shell">
-        <h2 class="home-showcase__title" id="home-showcase">Highlights</h2>
-        <p class="home-showcase__lede">Visual portfolio of my work.</p>
-      </header>
-      <div class="site-shell">
-        <div class="project-cards__container">
-
-          <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/brown.gif" alt="Standing in front of Brown University" loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3>Started my PhD in Computer Science!</h3>
-              <p class="project-card__summary">Brown University</p>
-              <div class="project-card__details">
-                <div class="detail-section">
-                  <p>Advised by Prof. Serena Booth in the <a href="https://giraffe.cs.brown.edu/" target="_blank" rel="noopener">GIRAFFE lab</a>.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/msr_uri.gif" alt="Internship photos at Microsoft Research." loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3>Microsoft Research Internship</h3>
-              <p class="project-card__summary">Microsoft Research</p>
-              <div class="project-card__details">
-                <div class="detail-section">
-                  <p>One of top 20 undergrad students selected.</p>
-                  <p>Led a project on multi-turn agentic attribution: <a href="https://www.microsoft.com/en-us/research/publication/tokengeist-multi-turn-attribution-tracing-in-agentic-conversations/" target="_blank" rel="noopener">Tokengeist</a>.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <!-- <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/tokengeist.gif" alt="Animated visualization of token embeddings shifting in space." loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3>Influence Attribution in LLMs</h3>
-              <p class="project-card__summary">Microsoft Research</p>
-              <div class="project-card__details">
-                <div class="detail-section">
-                  <p>Tracing in agentic LLM systems to pinpoint influence and responsibility.</p>
-                </div>
-              </div>
-            </div>
-          </article> -->
-
-          <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/illuminAI.gif" alt="illuminAI UofT AI Ethics Conference montage." loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3><a href="https://youtu.be/ZBoA7ihBOdw" target="_blank" rel="noopener">UofT AI Ethics Hackathon 2025</a></h3>
-              <p class="project-card__summary">illuminAI</p>
-              <div class="project-card__details">
-                <div class="detail-section">
-                  <p>Hosted 180 students across Ontario to develop ethical AI systems.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/RBC_scholarship.jpg" alt="RBC Scholarship for Diversity and Innovation in Technology." loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3><a href="https://www.utoronto.ca/celebrates/5-undergraduate-students-receive-2024-rbc-awards-diversity-and-innovation-technology" target="_blank" rel="noopener">Winner of Scholarship for Diversity and Innovation in Technology</a></h3>
-              <p class="project-card__summary">Royal Bank of Canada</p>
-              <div class="project-card__details">
-                <div class="detail-section">
-                  <p>One of top 5 undergrad students selected.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/KITE.gif" alt="Clinician and patient working with rehabilitation sensors." loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3><a href="https://link.springer.com/chapter/10.1007/978-981-95-0568-5_5" target="_blank" rel="noopener">Personalized Feedback in Virtual Exercise Rehabilitation</a></h3>
-              <p class="project-card__summary">KITE Research Institute</p>
-              <div class="project-card__details">
-                <div class="detail-section">
-                  <p>Personalized feedback using LLMs with pose features for virtual exercise rehabilitation.</p>
-                </div>
-              </div>
-            </div>
-          </article> -->
-
-          <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/trail.gif" alt="Automatic lane detection for Autonomous Vehicles." loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3>Lane Detection Research for Autonomous Vehicles</h3>
-              <p class="project-card__summary">Toronto Robotics and AI Lab, aUToronto</p>
-              <div class="project-card__details">
-                <div class="detail-section">
-                  <p>Developing algorithms for real-time lane detection and tracking.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/ESA_cansat.gif" alt="ESA CanSat Competition." loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3><a href="https://www.esa.int/Education/CanSat/Looking_back_on_CanSat_2022_and_forward_to_2023" target="_blank" rel="noopener">International ESA CanSat Competition 2022</a></h3>
-              <p class="project-card__summary">Canadian Space Agency, European Space Agency</p>
-              <div class="project-card__details">
-                <div class="detail-section">
-                  <!-- <p>Developing a can-sized satellite for the ESA CanSat Competition.</p> -->
-                  <p><a href="https://esamultimedia.esa.int/docs/edu/TeamZephyr_FinalReport.pdf" target="_blank" rel="noopener noreferrer">Modular Can-Sized Satellite System with Active Attitude Control.</a> <b>🪷 Outstanding Paper Award.</b></p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-
-        </div>
-      </div>
-    </section>
-
-    <section class="home-showcase" aria-labelledby="home-music-showcase">
-      <header class="home-showcase__header site-shell">
-        <h2 class="home-showcase__title" id="home-music-showcase">Music</h2>
-        <p class="home-showcase__lede">Some recorded performances.</p>
-      </header>
-      <div class="site-shell">
-        <div class="project-cards__container">
-
-          <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/nocturne_vampire.gif" alt="Vampire performance" loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3><a href="https://youtu.be/gw_D3a9nKqQ?t=2476" target="_blank" rel="noopener">Vampire</a></h3>
-              <p class="project-card__summary">Olivia Rodrigo cover at EngSci Nocturne 2025.</p>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/nocturne_BJT.jpg" alt="Falling Behind performance with Ben and Tyler" loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3><a href="https://youtu.be/lH6rNlKvlAs" target="_blank" rel="noopener">Falling Behind</a></h3>
-              <p class="project-card__summary">Laufey cover at EngSci Nocturne 2024.</p>
-              <!-- <div class="project-card__details"> -->
-                <div class="detail-section">
-                  <p>with Ben and Tyler on guitar!</p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__image">
-              <img src="media/nocturne_vienna.png" alt="Vienna by Billy Joel (cover at EngSci Nocturne 2023)" loading="lazy" decoding="async">
-            </div>
-            <div class="project-card__content">
-              <h3><a href="https://youtu.be/kR8qsUPareM?list=RDkR8qsUPareM" target="_blank" rel="noopener">Vienna</a></h3>
-              <p class="project-card__summary">Billy Joel cover at EngSci Nocturne 2023.</p>
-            </div>
-          </article>
-
-
-        </div>
-      </div>
-    </section>
-
-
-
   </main>
-
-  <footer class="site-footer">
-    <div class="site-shell site-footer__inner">
-      <p class="site-footer__note">© jess 2026.</p>
-      <div class="site-footer__links">
-        <a href="mailto:jessica_tang1@brown.edu" class="site-footer__link">email</a>
-        <a href="https://www.linkedin.com/in/jessica-tang-532982194/" class="site-footer__link">linkedin</a>
-        <a href="https://scholar.google.com/citations?user=IEvZRL8AAAAJ&amp;hl=en&amp;oi=sra" class="site-footer__link">google scholar</a>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
