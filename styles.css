@@ -331,14 +331,6 @@ a:focus-visible,
   line-height: 1.25;
 }
 
-.card__title a {
-  color: var(--accent);
-}
-
-.card__title a:hover {
-  color: var(--fg);
-}
-
 .card__org {
   font-size: 0.9em;
   color: var(--muted);
@@ -350,6 +342,24 @@ a:focus-visible,
 
 .card__note + .card__note {
   margin-top: 0.3em;
+}
+
+.card__more {
+  margin-top: auto;
+  padding-top: 0.6em;
+  align-self: flex-start;
+  font-size: 0.94em;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.card__more::after {
+  content: " \2192";
+}
+
+.card__more:hover,
+.card__more:focus-visible {
+  text-decoration: underline;
 }
 
 /* ---------- writing: publications ---------- */
