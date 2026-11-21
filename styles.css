@@ -320,38 +320,7 @@ a:focus-visible,
 }
 
 .card__thumb {
-  position: relative;
   display: block;
-}
-
-.card__thumb::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 56px;
-  height: 56px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.78);
-  background: rgba(8, 7, 7, 0.52);
-  transition: background 180ms ease;
-}
-
-.card__thumb::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-36%, -50%);
-  border-left: 17px solid rgba(255, 255, 255, 0.94);
-  border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-}
-
-.card__thumb:hover::before,
-.card__thumb:focus-visible::before {
-  background: rgba(8, 7, 7, 0.78);
 }
 
 .card__body {
