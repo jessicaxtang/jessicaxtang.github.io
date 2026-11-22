@@ -10,10 +10,9 @@
   --ink-900: #1c1a1c; /* about */
   --ink-800: #36322c; /* writing */
   --ink-950: #040302; /* talks */
-  --cream: #e8dfd4; /* music */
+  /* music reuses --ink-900 */
 
   --rose: #ff9191;
-  --rose-deep: #a8453f;
   --green: #62b052;
   --blue: #99daff;
 
@@ -59,12 +58,12 @@
 }
 
 .theme-music {
-  --bg: var(--cream);
-  --fg: var(--ink-800);
-  --muted: rgba(54, 50, 44, 0.62);
-  --line: rgba(54, 50, 44, 0.24);
-  --panel: rgba(54, 50, 44, 0.05);
-  --accent: var(--rose-deep);
+  --bg: var(--ink-900);
+  --fg: #ffffff;
+  --muted: rgba(255, 255, 255, 0.6);
+  --line: rgba(255, 255, 255, 0.2);
+  --panel: rgba(255, 255, 255, 0.045);
+  --accent: var(--rose);
 }
 
 /* ---------- base ---------- */
